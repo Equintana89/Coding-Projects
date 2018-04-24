@@ -45,5 +45,21 @@ for(counter1 = 0; counter1 < size; counter1++){
 }
 console.log(x);
 
-
+//for practicing functions by modifying previous practice problems
+function chess() {
+	let i = "";
+	let size = 8;
+for(counter1 = 0; counter1 < size; counter1++){
+	for(counter2 = 0; counter2 < size; counter2++){
+		if((counter1 + counter2) % 2 !== 0) {
+			i += "#";
+		}else{
+			i += " ";
+		}
+		i += "\n";
+	}
+	return i;
+}
+}
+console.log(chess());
 
