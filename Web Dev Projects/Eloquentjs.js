@@ -30,7 +30,7 @@
 
 
 
-let x="";
+/*let x="";
 let size=8;
 
 for(counter1 = 0; counter1 < size; counter1++){
@@ -43,10 +43,12 @@ for(counter1 = 0; counter1 < size; counter1++){
 	}
 	x += "\n";
 }
-console.log(x);
+console.log(x);*/
+
+
 
 //for practicing functions by modifying previous practice problems
-function chess() {
+/*function chess() {
 	let i = "";
 	let size = 8;
 for(counter1 = 0; counter1 < size; counter1++){
@@ -61,5 +63,32 @@ for(counter1 = 0; counter1 < size; counter1++){
 	return i;
 }
 }
-console.log(chess());
+console.log(chess());*/
 
+
+//MINIMUM
+ 
+/*function max(a, b){
+  if(a < b) return b;
+  else return a;
+}
+*/
+
+
+//RECURSION
+
+// function isEven(n){
+// 	if(n == 0) return true;
+// 	else if(n < 0) return isEven(-n);
+// 	else return isEven(n - 2);
+ 	
+  
+// } 	
+
+
+//BEAN COUNTING
+
+function countBs(bbc, kakkerlack) {
+	let string = String(number);
+	while (string.length <)
+}
