@@ -71,8 +71,14 @@ console.log(chess());*/
 /*function max(a, b){
   if(a < b) return b;
   else return a;
-}
-*/
+}*/
+
+function min(a, b){
+  if(a < b){
+  	return a;
+  } else return b;
+ }
+
 
 
 //RECURSION
@@ -88,7 +94,10 @@ console.log(chess());*/
 
 //BEAN COUNTING
 
-function countBs(bbc, kakkerlack) {
+/*function countBs(bbc, kakkerlack) {
 	let string = String(number);
 	while (string.length <)
-}
+}*/
+
+
+
