@@ -97,10 +97,39 @@ console.log(chess());*/
 
 //BEAN COUNTING
 
-/*function countBs(bbc, kakkerlack) {
-	let string = String(number);
-	while (string.length <)
-}*/
+
+/*function countBs(myString) {
+	let counter1 = 0;	
+	for(i = 0; i < myString.length; i++){
+		if (myString [i] === "B") {
+			counter1 = counter1 + 1;
+		}
+	}
+	return counter1;
+
+  }*/
+
+ function countChar(string, letter){
+ 	let counter = 0;
+  	for(var i = 0; i < string.length; i++){
+  		if(string[i] === letter){
+  			counter += 1;
+  		}
+  	}
+  	return counter;
+  }
+ 
+ function countBs(string){
+ 	return countChar(string, "B");
+ } 
+
+
+
+
+
+
+
+
 
 
 
