@@ -1,0 +1,57 @@
+body{
+	background-image: url(shredding.jpg);
+	background-size: cover;
+}
+
+
+
+form{
+	text-align: center;
+	padding-top: 20px;
+}
+
+
+
+label {
+	display: inline-block;	
+	padding: 12px 12px 12px 0;
+	text-align: center;
+}
+
+input {
+	width: 50%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-sizing: border-box;
+	resize: vertical;
+}
+
+button{
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  float: right;
+}
+
+.form-group {
+	border-radius: 8px;
+	background-color: none;
+	padding: 10px;
+	
+}
+
+.form-row {
+	border-radius: 8px;
+	background-color: none;
+	padding: 10px;
+	
+}
+
+.form-zip {
+	padding: 15px;
+	align-content: left;
+}
