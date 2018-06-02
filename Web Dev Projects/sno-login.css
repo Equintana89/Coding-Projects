@@ -1,6 +1,6 @@
 body{
 	margin: 0px auto;
-	background-image: url("mountain.jpg");
+	background-image: url("goggles-reflection.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 700px;
 }
@@ -9,7 +9,7 @@ body{
 	width: 600px;
 	height: 300px;
 	text-align: center;
-	background-color: rgba(103, 125, 187, 0.8);
+	background-color: rgba(12, 110, 247, 0.8);
 	border-radius: 4px;
 	margin: 0 auto;
 	margin-top: 150px;
@@ -37,10 +37,7 @@ body{
 
 }*/
 
-/*.login {
-	color: white;
-	text-align: center;
-}*/
+
 
 .button {
    border-top: 1px solid #a799eb;
