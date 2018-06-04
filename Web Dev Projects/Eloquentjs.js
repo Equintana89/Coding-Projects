@@ -83,21 +83,60 @@ console.log(chess());*/
 
 //RECURSION
 
-// function isEven(n){
-// 	if(n == 0) return true;
-// 	else if(n < 0) return isEven(-n);
-// 	else return isEven(n - 2);
- 	
-  
-// } 	
+/*function isEven(n){
+	if(n % 2 === 0) {
+		return true;
+	} else return false;
+ 	  
+ 	 if(n === 0){
+ 	 	return true;
+ 	 } 
+	else if(n < 0) return isEven(-n);
+} */	
 
 
 //BEAN COUNTING
 
+<<<<<<< HEAD
 /*function countBs(bbc, kakkerlack) {
 	let string = String(number);
 	while (string.length <)
 }*/
+=======
+
+/*function countBs(myString) {
+	let counter1 = 0;	
+	for(i = 0; i < myString.length; i++){
+		if (myString [i] === "B") {
+			counter1 = counter1 + 1;
+		}
+	}
+	return counter1;
+
+  }*/
+
+ function countChar(string, letter){
+ 	let counter = 0;
+  	for(var i = 0; i < string.length; i++){
+  		if(string[i] === letter){
+  			counter += 1;
+  		}
+  	}
+  	return counter;
+  }
+ 
+ function countBs(string){
+ 	return countChar(string, "B");
+ } 
+
+
+
+
+
+
+
+
+>>>>>>> 03ef7b925b0e421dd3f9fe3a6fcd8b0a3ebd12c3
 
 
 
