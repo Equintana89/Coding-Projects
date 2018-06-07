@@ -31,9 +31,16 @@ body{
 	
 }
 
-/*.form-input::before {
-	content: "\f508"; 
-	position: absolute;
+/*.form-input input[type="text"] {
+   position: absolute;
+}
+
+input {font-family: 'FontAwesome'; }
+
+
+.form-input::before {
+	content: "\f007"; 
+	
 
 }*/
 

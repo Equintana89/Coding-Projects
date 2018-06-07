@@ -97,12 +97,12 @@ console.log(chess());*/
 
 //BEAN COUNTING
 
-<<<<<<< HEAD
+
 /*function countBs(bbc, kakkerlack) {
 	let string = String(number);
 	while (string.length <)
 }*/
-=======
+
 
 /*function countBs(myString) {
 	let counter1 = 0;	
@@ -115,7 +115,7 @@ console.log(chess());*/
 
   }*/
 
- function countChar(string, letter){
+/* function countChar(string, letter){
  	let counter = 0;
   	for(var i = 0; i < string.length; i++){
   		if(string[i] === letter){
@@ -127,7 +127,36 @@ console.log(chess());*/
  
  function countBs(string){
  	return countChar(string, "B");
- } 
+ } */
+
+
+//The Sum of a Range
+
+let numArray = [];
+
+function range(start, end, step){
+	console.log(numArray);
+
+	if(!step){
+		step = 1;
+	}
+
+	if(step < 0){
+		for(var i = start; i >= end; i += step) {
+			numArray.push(i);
+			console.log(numArray);
+		}
+	}
+	else {
+		for(var i = start; i <= end; i += step){
+			total += array[i];
+		}
+		return total;
+	}
+
+}
+
+console.log(sum(range(42,14,-2)));
 
 
 
@@ -136,7 +165,7 @@ console.log(chess());*/
 
 
 
->>>>>>> 03ef7b925b0e421dd3f9fe3a6fcd8b0a3ebd12c3
+
 
 
 
