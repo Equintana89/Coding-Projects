@@ -135,7 +135,7 @@ if (john.indexOf('teacher') === -1){
 // Lecture: Objects
 
 //version 1
-var john = {
+/*var john = {
 	name: 'John',
 	lastName: 'Smith',
 	yearOfBirth: 1990,
@@ -163,3 +163,159 @@ jane['yearOfBirth'] = 1969;
 jane['job'] = 'retired';
 jane['isMarried'] = true;
 console.log(jane);
+*/
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+// Lecture: Objects and Methods
+ //v1.0
+/* var john = {
+	name: 'John',
+	lastName: 'Smith',
+	yearOfBirth: 1990,
+	job: 'teacher',
+	isMarried: false,
+	family: ['Jane', 'Mark', 'Bob'],
+	calculateAge: function(){
+		return 2016 - this.yearOfBirth;
+	}
+};
+
+
+//console.log(john.calculateAge(1990));
+
+console.log(john.calculateAge());
+
+var age = john.calculateAge();
+john.age = age;
+console.log(john);*/
+
+//v2.0
+
+/*var john = {
+	name: 'John',
+	lastName: 'Smith',
+	yearOfBirth: 1990,
+	job: 'teacher',
+	isMarried: false,
+	family: ['Jane', 'Mark', 'Bob'],
+	calculateAge: function(){
+		this.age = 2018 - this.yearOfBirth;
+	}
+};
+
+john.calculateAge();
+console.log(john);
+
+
+var mike = {
+	yearOfBirth: 1950,
+	calculateAge: function(){
+		this.age = 2018 - this.yearOfBirth;
+	}
+};
+
+mike.calculateAge();
+console.log(mike);*/
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Lecture: Loops
+
+/*for(var i = 0; i < 10; i++){
+	console.log(i);
+}*/
+
+/*
+0, true, print 0, update i to 0
+1, true, print 1, update i to 1
+.
+.
+.
+.
+.
+.
+.
+9, true, print 9, update i to 10
+10, FALSE, end loop!
+*/
+
+
+
+//var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
+
+//For loops
+
+/*for(var i = 0; i < names.length; i++){
+	console.log(names[i]);
+}
+
+
+for(var i = names.length - 1; i >= 0; i--){
+	console.log(names[i]);
+}*/
+
+
+
+//While loops
+
+/*var i = 0;
+while(i < names.length){
+	console.log(names[i]);
+	i++;
+}*/
+
+
+// break
+/*for(var i = 1; i <= 5; i++){
+	console.log(i);
+
+	if(i === 3) {
+		break;
+	}
+}
+
+//continue
+for(var i = 1; i <= 5; i++){
+	if(i === 3) {
+		continue;
+	}
+
+	console.log(i);
+}*/
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+// CODING CHALLENGE 2
+
+function printFullAge(birthYear){
+	var ages = [];
+	var fullAges = [];
+
+	for(var i = 0; i < birthYear.length; i++){
+	ages[i] = 2016 - birthYear[i];
+}
+
+for(i = 0; i < ages.length; i++){
+	if(ages[i] >= 18){
+		console.log('Persosn ' + (i + 1) + ' is ' + ages[i] + ' years old and of full age.')
+		fullAges.push(true);
+	} else {
+		console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' years old and is not of full age.');
+		fullAges.push(false);
+	}
+}
+
+return fullAges;
+
+}
+
+
+var birthYear = [1989, 1992, 2011, 1998];
+var full_1 = printFullAge(birthYear);
+var full_2 = printFullAge([2012, 1915, 1999]);
+
