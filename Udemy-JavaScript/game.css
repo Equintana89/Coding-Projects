@@ -9,7 +9,7 @@
     
 }
 
-.clearfix::after {
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
@@ -60,6 +60,7 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
     position: relative;
+    color: #e0e0e0;
 }
 
 .player-score {
@@ -71,15 +72,19 @@ body {
 }
 
 .active { background-color: #f7f7f7; }
-.active .player-name { font-weight: 300; }
+.active .player-name { 
+    font-weight: 150;
+    color: #061630;
+ }
 
-.active .player-name::after {
+.active .player-name:after {
     content: "\2022";
     font-size: 47px;
     position: absolute;
     color: #EB4D4D;
     top: -7px;
     right: 10px;
+
     
 }
 
