@@ -74,7 +74,7 @@ body {
 .active { background-color: #f7f7f7; }
 .active .player-name { 
     font-weight: 150;
-    color: #061630;
+    color: #6f7175;
  }
 
 .active .player-name:after {
