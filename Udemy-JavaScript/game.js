@@ -7,6 +7,7 @@ GAME RULES:
 - The first player to reach 100 points on GLOBAL score wins the game
 */
 
+/*let winner = activePlayer + 'is the Winner!!';*/
 let newGame = false;
 let resetScores = [0,0];
 let scores, roundScore, activePlayer;
@@ -44,6 +45,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
 		activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
 		roundScore = 0;
 
+
 		document.getElementById('current-0').textContent = '0';
 		document.getElementById('current-1').textContent = '0';
 
@@ -70,18 +72,25 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 	document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 
 	//Check if player won the game
-
-
-});
-
-document.querySelector('.btn-new').addEventListener('click', function() {
+	/*if(activePlayer === 0){
+			activePlayer = 1;
+		} else {
+			activePlayer = 0;
+		}*/
 	
-	document.getElementById('current-0').textContent = '0';
-	document.getElementById('current-1').textContent = '0';
 
-	document.getElementById('score-0').textContent = '0';
-	document.getElementById('score-1').textContent = '0';
+		document.querySelector('.btn-new').addEventListener('click', function() {
+		
+		document.getElementById('current-0').textContent = '0';
+		document.getElementById('current-1').textContent = '0';
+
+		document.getElementById('score-0').textContent = '0';
+		document.getElementById('score-1').textContent = '0';
+	});
+
 });
+
+
 
 
 //document.querySelector('#current-' + activePlayer).textContent = dice;
@@ -91,8 +100,4 @@ document.querySelector('.btn-new').addEventListener('click', function() {
 
 //The Ternary operator on line 43 takes place of the IF statement below
 
-/*if(activePlayer === 0){
-			activePlayer = 1;
-		} else {
-			activePlayer = 0;
-		}*/
+
