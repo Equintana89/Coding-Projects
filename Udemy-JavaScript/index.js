@@ -290,7 +290,7 @@ for(var i = 1; i <= 5; i++){
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
-// CODING CHALLENGE 2
+//CODING CHALLENGE 2
 
 function printFullAge(birthYear){
 	var ages = [];
@@ -302,7 +302,7 @@ function printFullAge(birthYear){
 
 for(i = 0; i < ages.length; i++){
 	if(ages[i] >= 18){
-		console.log('Persosn ' + (i + 1) + ' is ' + ages[i] + ' years old and of full age.')
+		console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' years old and of full age.')
 		fullAges.push(true);
 	} else {
 		console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' years old and is not of full age.');
