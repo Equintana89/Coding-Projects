@@ -116,6 +116,7 @@ body {
     margin: 0 auto;
     padding: 12px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .player-current-label {
@@ -186,5 +187,6 @@ i {
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
+
 
 

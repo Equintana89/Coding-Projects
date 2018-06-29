@@ -12,6 +12,7 @@ let scores, roundScore, activePlayer, gamePlaying;
 init();
 
 let lastDice;
+let loser = "Sorry! You rolled a 1 :(";
 
 document.querySelector('.btn-roll').addEventListener('click', function() {
     if(gamePlaying) {
@@ -36,6 +37,8 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         		roundScore += dice1 + dice2;
         		document.querySelector('#current-' + activePlayer).textContent = roundScore;
         	} else {
+        		document.querySelector('#name-' + activePlayer).textContent = loser;
+        		gamePlaying = false;
         		// Next player
         		nextPlayer();
 
