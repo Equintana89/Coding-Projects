@@ -168,18 +168,18 @@ i {
 .btn-roll { top: 403px;}
 .btn-hold { top: 467px;}
 
-.dice-1, .dice-2 {
+#dice-1, #dice-2 {
     position: absolute;
     top: 190px;
     height: 100px;
     box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.10);
 }
 
-.dice-1 {
+#dice-1 {
 	left: 37%;
 }
 
-.dice-2 {
+#dice-2 {
 	left: 53%;
 }
 
