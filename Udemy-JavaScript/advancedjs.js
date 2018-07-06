@@ -133,7 +133,7 @@ let jane = Object.create(personProto, {
 // Primitives vs objects
 
 //Primitives
-let a = 23;
+/*let a = 23;
 let b = a;
 a = 46; //Mutated/changed variable
 console.log(a);
@@ -167,36 +167,153 @@ function change(a, b) {
 change(age, obj);
 console.log(age);
 console.log(obj.city);
+*/
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Lecture: Passing functions as argumetns
+
+/*let years = [1990, 1965, 1937, 2005, 1998];
+
+function arrayCalc(arr, fn) {
+	let arrRes = [];
+
+	for(let i = 0; i < arr.length; i++) {
+		arrRes.push(fn(arr[i]));
+	}
+
+	return arrRes;
+}
+
+function calculatAge(el) {
+	return 2016 - el;
+}
+
+function isFullAge(el) {
+	return el >= 18;
+}
+
+function maxHeartRate(el) {
+	if(el >= 18 && el <= 81){
+		return Math.round(206.9 - (0.67 * el));
+	} else {
+		return -1;
+	}
+	
+}
+
+let ages = arrayCalc(years, calculatAge);
+
+let fullAges = arrayCalc(ages, isFullAge);
+let rates = arrayCalc(ages, maxHeartRate);
+
+console.log(ages);
+console.log(fullAges);
+console.log(rates);*/
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Lecture: Functions returning functions
+
+/*function interviewQuestion(job) {
+	if(job === 'designer') {
+		return function(name) {
+			console.log(name + ',' + ' can you please explain what ux design is?')
+		}
+	} else if (job === 'teacher') {
+		return function(name) {
+			console.log('What subject do you teach, ' + name + '?');
+		}
+	} else {
+		return function(name) {
+			console.log('Hello ' + name + '!' + ' What do you do?');
+		}
+	}
+}
+
+let teacherQuestion = interviewQuestion('teacher');
+let designerQuestion = interviewQuestion('designer');
+let defaultQuestion = interviewQuestion();
+
+teacherQuestion('John');
+designerQuestion('Eddie');
+defaultQuestion('Mike'); 
+
+interviewQuestion('teacher')('Mark');*/ // Another way of calling the functions
 
 
+//Practice
+/*function enforceRule(gym) {
+	if(gym === 'swimmers') {
+		return function(title) {
+			console.log(title + ',' + ' Please do not run!');
+		}
+	} else if (gym === 'body builders') {
+		return function(title) {
+			console.log('Hey ' + title + ' please do not overload the bar!')
+		}
+	} else {
+		return function(title) {
+			console.log('Attention! We will be closing in 10 minutes. Please begin to put away all of the weights.')
+		}
+	}
+}
+
+let swimmersEnforce = enforceRule('swimmers');
+let liftersEnforce = enforceRule('body builders');
+let defaultEnforce = enforceRule();
+
+swimmersEnforce('Swimmers');
+liftersEnforce('body builders');
+defaultEnforce();*/
+
+//Practice
+/*function sportQuestion(sport) {
+	if(sport === 'basketball') {
+		return function(name) {
+			console.log('Do you beleive the ' + name + ' will make out of the western conference?');
+		}
+	} else if (sport === 'football') {
+		return function(name) {
+			console.log('How good will the ' + name + ' be this year?');
+		}
+	} else {
+		return function(name) {
+			console.log('What two teams in your opinion will make it to the world cup final?');
+		}
+	}
+}
+
+let bball = sportQuestion('basketball');
+let fball = sportQuestion('football');
+let defaultSport = sportQuestion();
+
+bball('Lakers');
+fball('Eagles');
+defaultSport();*/
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Lecture: Immediately invoked function expressions (IIFE)
+
+/*function game() {
+	let score = Math.random() * 10;
+	console.log(score >= 5);
+}
+ game();*/
+
+//IIFE
+ (function () {
+ 	let score = Math.random() * 10;
+	console.log(score >= 5);
+})();
+
+//console.log(score);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+(function (goodluck) {
+ 	let score = Math.random() * 10;
+	console.log(score >= 5 - goodluck);
+})(5);
 
 
 
