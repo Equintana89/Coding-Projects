@@ -70,7 +70,6 @@ function reset(){
 	  }
 	}
 	h1.style.backgroundColor = "steelblue";
-}
 
 
 resetButton.addEventListener("click", function(){

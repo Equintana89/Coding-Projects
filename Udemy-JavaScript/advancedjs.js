@@ -302,22 +302,55 @@ defaultSport();*/
  game();*/
 
 //IIFE
- (function () {
+ /*(function () {
  	let score = Math.random() * 10;
 	console.log(score >= 5);
 })();
-
+*/
 //console.log(score);
 
-
+/*
 (function (goodluck) {
  	let score = Math.random() * 10;
 	console.log(score >= 5 - goodluck);
-})(5);
+})(5);*/
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Lecture: Closures
+
+function retirement(retirementAge) {
+	let a = ' years until retirement.';
+	return function(yearOfBirth) {
+		let age = 2016 - yearOfBirth;
+		console.log((retirementAge - age) + a);
+	}
+}
+
+let retirementUS = retirement(66);
+let retireGermany = retirement(65);
+let retirementIceland = retirement(67);
+
+retirementUS(1990);
+//retirement(66)(1990);
+retirementIceland(1990)
+retireGermany(1990);
 
 
-
-
+function interviewQuestion(job) {
+	let job = 'designer';
+		return function(name) {
+			
+			console.log(name + ',' + ' can you please explain what ux design is?')
+		}
+	} else if (job === 'teacher') {
+		return function(name) {
+			console.log('What subject do you teach, ' + name + '?');
+		}
+	} else {
+		return function(name) {
+			console.log('Hello ' + name + '!' + ' What do you do?');
+		}
+}
 
 
 
