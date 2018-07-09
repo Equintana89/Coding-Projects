@@ -1,4 +1,4 @@
-var num = Math.sqrt(0);
+/*var num = Math.sqrt(0);
 
 function isSquare(num){
   for(i = 0; i < 200 ; i++){
@@ -8,4 +8,10 @@ function isSquare(num){
   } 
   return false;
  
-}
+}*/
+
+
+
+
+
+const century = year => Math.ceil(year/100);

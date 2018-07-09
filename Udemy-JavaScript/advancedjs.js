@@ -318,7 +318,7 @@ defaultSport();*/
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Lecture: Closures
 
-function retirement(retirementAge) {
+/*function retirement(retirementAge) {
 	let a = ' years until retirement.';
 	return function(yearOfBirth) {
 		let age = 2016 - yearOfBirth;
@@ -334,12 +334,12 @@ retirementUS(1990);
 //retirement(66)(1990);
 retirementIceland(1990)
 retireGermany(1990);
+*/
 
 
-function interviewQuestion(job) {
-	let job = 'designer';
+/*function interviewQuestion(job) {
+	if(job === 'designer') {
 		return function(name) {
-			
 			console.log(name + ',' + ' can you please explain what ux design is?')
 		}
 	} else if (job === 'teacher') {
@@ -350,7 +350,101 @@ function interviewQuestion(job) {
 		return function(name) {
 			console.log('Hello ' + name + '!' + ' What do you do?');
 		}
+	}
+}*/
+
+
+
+
+/*Since we created an inner function and passed name through it, our variables inside our if statement which are inside
+the name function and within our interviewQuestions function had access to eachother. Instead of having to return the name
+function for each else if statement, we only needed one name function returned at the top, and could access that through all
+of our else if statements. Even after the function had already been returned.*/
+
+/*function interviewQuestion(job) {
+	return function(name) {
+		if (job === 'designer') {
+			console.log(name + ',' + ' can you please explain what ux design is?');
+		} else if (job === 'teacher') {
+			console.log('What subject do you teach, ' + name + '?');
+		} else {
+			console.log('Hello ' + name + '!' + ' What do you do?');
+		}
+	}
 }
+
+interviewQuestion('teacher')('John');
+*/
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Lecture: Bind, call and apply
+
+/*let john = {
+	name: 'John',
+	age: 26,
+	job: 'teacher',
+	presentation: function(style, timeOfDay) {
+		if (style === 'formal') {
+			console.log("Good " + timeOfDay + " ladies and gentlemen! I'm " + this.name + ", I'm a " + this.job + " and I'm " + this.age + " years old.");
+		} else if (style === 'friendly') {
+			console.log("Hey! what's up? I'm " + this.name + ", I'm a " + this.job + " and I'm " + this.age + " years old. Have a nice " + timeOfDay + ".");
+		}
+	}
+};
+
+let emily = {
+	name: 'Emily',
+	age: 35,
+	job: 'designer'
+};
+
+john.presentation('formal', 'morning');
+
+john.presentation.call(emily, 'friendly', 'afternoon');
+
+//john.presentation.apply(emily, ['friendly', 'afternoon']);
+
+let johnFriendly = john.presentation.bind(john, 'friendly');
+
+johnFriendly('morning');
+johnFriendly('night');
+
+let emilyFormal = john.presentation.bind(emily, 'formal');
+emilyFormal('afternoon');
+
+
+
+
+
+let years = [1990, 1965, 1937, 2005, 1998];
+
+function arrayCalc(arr, fn) {
+	let arrRes = [];
+
+	for(let i = 0; i < arr.length; i++) {
+		arrRes.push(fn(arr[i]));
+	}
+
+	return arrRes;
+}
+
+function calculatAge(el) {
+	return 2016 - el;
+}
+
+function isFullAge(limit, el) {
+	return el >= limit;
+}
+
+let ages = arrayCalc(years, calculatAge);
+let fullJapan = arrayCalc(ages, isFullAge.bind(this, 20));
+console.log(ages);
+console.log(fullJapan);*/
+
+
+
+
 
 
 
