@@ -461,49 +461,104 @@ c) correct answer (I would use a number for this)
 
  
 
+/*(function() {
 
-
-(function(){
-function Question(question, answer, correct) {
+	function Question(question, answers, correct) {
 	this.question = question;
-	this.answer = answer;
+	this.answers = answers;
 	this.correct = correct;	
 }
 
 Question.prototype.displayQuestion = function() {
 	console.log(this.question)
 
-	for(let i = 0; i < this.answer.length; i++){
+	for(let i = 0; i < this.answers.length; i++){
 		console.log(i + ': ' + this.answers[i]);
 	}
 }
 
-Question.prototype.checkAnswer = function () {
-	if(ans === this.answer){
+Question.prototype.checkAnswer = function (ans) {
+	if(ans === this.correct){
 		console.log('Correct!');
 	
 
 } else {
 	console.log('Wrong answer! Try again');
+  }
 }
 
-let q1 = new Question('Who won the 1997 NBA finals?', ['Chicago Bulls', 'Cleveland Caveliers', 'Utah Jazz'], 1);
+let q1 = new Question('Who won the 1997 NBA finals?', ['Chicago Bulls', 'Cleveland Caveliers', 'Utah Jazz'], 0);
 
 let q2 = new Question('Who won the 2018 NBA finals?', ['Cleveland  Caveliers', 'Houston Rockets', 'Golden State Warriors'], 2);
 
-let q3 = new Question('Who won the 2016 NBA finals MVP?', ['Lebron James', 'Kyrie Irving', 'Kevin Love'], 3);
+let q3 = new Question('Who won the 2016 NBA finals MVP?', ['Lebron James', 'Kyrie Irving', 'Kevin Love'], 0);
 
-let questions = [q1, q2, q3];
+let question = [q1, q2, q3];
 
-let n = Math.floor(Math.random() * questions.length);
+let n = Math.floor(Math.random() * question.length);
 
 question[n].displayQuestion();
 
-var answer = parseInt(prompt('Please select the correct answer.'));
+var answers = parseInt(prompt('Please select the correct answer.'));
 
-questions[n].checkAnswer(answer);
+question[n].checkAnswer(answers);
+
+})();*/
 
 
-  }
+/*
+--- Let's build a fun quiz game in the console! ---
+1. Build a function constructor called Question to describe a question. A question should include:
+a) question itself
+b) the answers from which the player can choose the correct one (choose an adequate data structure here, array, object, etc.)
+c) correct answer (I would use a number for this)
+2. Create a couple of questions using the constructor
+3. Store them all inside an array
+4. Select one random question and log it on the console, together with the possible answers (each question should have a number) (Hint: write a method for the Question objects for this task).
+5. Use the 'prompt' function to ask the user for the correct answer. The user should input the number of the correct answer such as you displayed it on Task 4.
+6. Check if the answer is correct and print to the console whether the answer is correct ot nor (Hint: write another method for this).
+7. Suppose this code would be a plugin for other programmers to use in their code. So make sure that all your code is private and doesn't interfere with the other programmers code (Hint: we learned a special technique to do exactly that).
+*/
+
+
+function Question(question, answer, correct){
+	this.question = question;
+	this.answer = answer;
+	this.correct = correct;
+}
+
+Question.prototype.displayQuest = function() {
+	console.log(this.question);
+
+	for(i = 0; i < this.answer.length; i++) {
+		console.log(i + ': ' + this.answer[i]);
+	}
+
+}
+
+Question.prototype.checkAnswer = function(ans) {
+	if(ans === this.answer){
+		console.log("You have guessed it right!!")
+	} else {
+		console.log('You have guessed incorrectly. Please try again!');
+	}
+}
+
+let quest1 = new Question('When was the internet invented?', ['1950', '1976', '1983'], 2);
+let quest2 = new Question('When was the first computer built?', ['between 1936 and 1938', '02/01/1954', '01/03/1965'], 0);
+let quest3 = new Question('Who was the creator of the first Apple training manual?', ['Paul Allen', 'Bill Gates', 'Steve Balmer'], 0);
+
+let quests = [quest1, quest2, quest3];
+
+let num = Math.floor(Math.random() * question.length);
+
+question[quests].displayQuest();
+
+let question = parseInt(prompt("Please enter the corret answer."));
+
+
+
+
+
 	
-})();
+
