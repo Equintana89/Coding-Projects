@@ -521,6 +521,7 @@ c) correct answer (I would use a number for this)
 */
 
 
+// Practice
 function Question(question, answer, correct){
 	this.question = question;
 	this.answer = answer;
@@ -530,14 +531,14 @@ function Question(question, answer, correct){
 Question.prototype.displayQuest = function() {
 	console.log(this.question);
 
-	for(i = 0; i < this.answer.length; i++) {
+	for(let i = 0; i < this.answer.length; i++) {
 		console.log(i + ': ' + this.answer[i]);
 	}
 
 }
 
 Question.prototype.checkAnswer = function(ans) {
-	if(ans === this.answer){
+	if(ans === this.correct){
 		console.log("You have guessed it right!!")
 	} else {
 		console.log('You have guessed incorrectly. Please try again!');
@@ -548,14 +549,15 @@ let quest1 = new Question('When was the internet invented?', ['1950', '1976', '1
 let quest2 = new Question('When was the first computer built?', ['between 1936 and 1938', '02/01/1954', '01/03/1965'], 0);
 let quest3 = new Question('Who was the creator of the first Apple training manual?', ['Paul Allen', 'Bill Gates', 'Steve Balmer'], 0);
 
-let quests = [quest1, quest2, quest3];
+let question = [quest1, quest2, quest3];
 
 let num = Math.floor(Math.random() * question.length);
 
-question[quests].displayQuest();
+question[num].displayQuest();
 
-let question = parseInt(prompt("Please enter the corret answer."));
+let answer = parseInt(prompt("Please enter the corret answer."));
 
+question[num].checkAnswer(answer);
 
 
 
