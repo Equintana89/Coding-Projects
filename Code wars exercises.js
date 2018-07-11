@@ -11,7 +11,10 @@ function isSquare(num){
 }*/
 
 
+//Replacing all vowels with exclamation points
 
+function replace(s){
+  return s.replace(/[aeiouAEIOU]/g, '!');
+  }
 
-
-const century = year => Math.ceil(year/100);
+  
