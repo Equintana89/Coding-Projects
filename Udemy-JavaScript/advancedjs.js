@@ -522,7 +522,7 @@ c) correct answer (I would use a number for this)
 
 
 // Practice
-function Question(question, answer, correct){
+/*function Question(question, answer, correct){
 	this.question = question;
 	this.answer = answer;
 	this.correct = correct;
@@ -557,10 +557,79 @@ question[num].displayQuest();
 
 let answer = parseInt(prompt("Please enter the corret answer."));
 
-question[num].checkAnswer(answer);
+question[num].checkAnswer(answer);*/
 
 
+(function() {
+  function Question(question, answers, correct) {
+	this.question = question;
+	this.answers = answers;
+	this.correct = correct;	
+}
+
+Question.prototype.displayQuestion = function() {
+	console.log(this.question);
+
+	for(var i = 0; i < this.answers.length; i++){
+		console.log(i + ': ' + this.answers[i]);
+	}
+}
+
+Question.prototype.checkAnswer = function (ans, callback) {
+	var sc;
+
+	if(ans === this.correct){
+		console.log('Correct!');
+		sc = callback(true);
+	} else {
+	console.log('Wrong answer! Try again');
+
+	sc = callback(false);
+  }
+  this.displayScore(sc);
+}
+
+Question.prototype.displayScore = function(score){
+	console.log('Your current score is: ' + score);
+	console.log('-----------------------------------');
+}
+
+var q1 = new Question('Who won the 1997 NBA finals?', ['Chicago Bulls', 'Cleveland Caveliers', 'Utah Jazz'], 0);
+
+var q2 = new Question('Who won the 2018 NBA finals?', ['Cleveland  Caveliers', 'Houston Rockets', 'Golden State Warriors'], 2);
+
+var q3 = new Question('Who won the 2016 NBA finals MVP?', ['Lebron James', 'Kyrie Irving', 'Kevin Love'], 0);
+
+var questions = [q1, q2, q3];
+
+function score() {
+	var sc = 0;
+	return function(correct) {
+		if (correct) {
+			sc++;
+		}
+		return sc;
+	}
+}
+
+var keepScore = score();
 
 
+function nextQuestion() {
+
+	var n = Math.floor(Math.random() * questions.length);
+	questions[n].displayQuestion();
+	var answer = prompt('Please select the correct answer.');
+	if(answer !== 'exit') {
+		questions[n].checkAnswer(parseInt(answer), keepScore);
+
+		nextQuestion();
+	 }
+
+  }
+
+	nextQuestion();
+
+})();
 	
 
