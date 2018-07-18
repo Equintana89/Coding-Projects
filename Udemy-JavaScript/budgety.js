@@ -2,6 +2,36 @@
 //BUDGET CONTROLLER
 let budgetController = (function() {
 
+	let Expense = function(id, description, value) {
+		this.id = id;
+		this.description = description;
+		this.value = value;
+	};
+
+
+	let Income = function(id, description, value) {
+		this.id = id;
+		this.description = description;
+		this.value = value;
+	};
+
+
+	let totalExpenses = 0;
+
+	let data = {
+	allItems: {
+		exp: [],
+		inc: []
+	},
+
+	totals: {
+		exp: 0,
+		inc: 0
+	}
+	 
+ };
+
+
 
 })();
 
@@ -10,7 +40,31 @@ let budgetController = (function() {
 //UI CONTROLLER
 let UIController = (function() {
 
-	//some code
+	let DOMStrings = {
+		inputType: '.add__type',
+		inputDescription: '.add__description',
+		inputValue: '.add__value',
+		inputBtn: '.add__btn'
+
+	};
+
+	return {
+		getInput: function() {
+			return {
+			type: document.querySelector(DOMStrings.inputType).value, // Will be either inc or exp
+			description: document.querySelector(DOMStrings.inputDescription).value,
+			value: document.querySelector(DOMStrings.inputValue).value
+
+			};
+
+
+		},
+
+		getDOMStrings: function() {
+			return DOMStrings;
+		}
+		
+	};
 
 })();
 
@@ -20,9 +74,27 @@ let UIController = (function() {
 //GLOBAL APP CONTROLLER
 let controller = (function(budgetCtrl, UICtrl) {
 
+	let setupEventListeners = function() {
+		let DOM = UICtrl.getDOMStrings();
+
+	document.querySelector(DOM.inputBtn).addEventListener('click', ctrlAddItem);
+
+	document.addEventListener('keypress', function(event) {
+
+		if(event === 13 || event.which === 13) {
+			ctrlAddItem();
+
+
+			}
+		});
+	};
+	
+
+
 	let ctrlAddItem = function() {
 
 		// 1. Get the field input data
+		let input = UICtrl.getInput();
 
 		// 2. Add the item to the budget controller
 
@@ -32,27 +104,19 @@ let controller = (function(budgetCtrl, UICtrl) {
 
 		// 5. Display the budget on the UI
 
-		console.log('It works')
+	};
 
-	}
-
-	document.querySelector('.add__btn').addEventListener('click', ctrlAddItem);
-
-
-	document.addEventListener('keypress', function(event) {
-
-		if(event === 13 || event.which === 13) {
-			ctrlAddItem();
-
-
+	return {
+		init: function() {
+			console.log('Application has started.');
+			setupEventListeners();
 		}
-
-	});
+	};
 
 })(budgetController, UIController); 
 
 
-
+controller.init();
 
 
 
