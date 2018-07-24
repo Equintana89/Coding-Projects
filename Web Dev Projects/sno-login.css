@@ -86,8 +86,8 @@ input {font-family: 'FontAwesome'; }
    }
 .button:hover {
    border-top-color: #3915b0;
-   background: #3915b0;
-   color: #ccc;
+   background: #42b8f7;
+   color: #fff;
    }
 .button:active {
    border-top-color: #0eb026;
