@@ -36,9 +36,14 @@ html {
 	font-size: 17px;
 	margin-bottom: 20px;
 	background-color: #fff;
-	padding-left: 30px;
-	
+    padding-left: 15px;
 }
+
+.container-form input: :hover {
+    border: #fff;
+    background: #42b8f7;
+}
+
 
 .form-input i {
    padding-right: 20px;

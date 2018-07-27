@@ -18,14 +18,32 @@ html {
 }
 
 .container form {
-  padding-top: 150px;
+  padding-top: 20px;
+  width: 900px; 
+	height: 400px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 4px;
+	margin:  auto;
+	margin-top: 15px;
 }
 
 label {
-  color: white;
+  color: aliceblue;
   font-weight: bolder;
 }
 
 form {
   padding-top: 20px;
 }
+
+.title {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-family: lato;
+  color: aliceblue;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
