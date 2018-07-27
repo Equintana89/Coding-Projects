@@ -18,16 +18,17 @@ html {
 	width: 600px;
 	height: 300px;
 	text-align: center;
-	background-color: rgba(12, 110, 247, 0.8);
-	border-radius: 4px;
+	background-color: rgba(12, 110, 247, 0.7);
+	border-radius: 25px;
 	margin: 0 auto;
-	margin-top: 150px;
+	margin-top: 300px;
 }
 
 .container-form img {
 	height: 120px;
 	margin-top: -60px;
 	margin-bottom: 30px;
+  border-radius: 30px;
 }
 
 .container-form input {

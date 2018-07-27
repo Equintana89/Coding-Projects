@@ -22,7 +22,7 @@ html {
   width: 900px; 
 	height: 400px;
 	text-align: center;
-	background-color: rgba(0,0,0, 0.8);
+	background-color: rgba(0,0,0, 0.6);
 	border-radius: 4px;
 	margin:  auto;
   margin-top: 15px;
@@ -48,3 +48,22 @@ form {
   font-weight: bolder;
 }
 
+input[type=email],
+input[type=password] {
+ -webkit-appearance: none;
+  width : 100%;
+  border: 1px solid #333;
+  margin: 0;
+  font-family: inherit;
+  font-size: 90%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:invalid {
+	box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+	outline: none;
+}
