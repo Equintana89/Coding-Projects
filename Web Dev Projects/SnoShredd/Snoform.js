@@ -19,26 +19,6 @@ inputEmail.addEventListener('input', function(event) {
 
 
 
-
-
-//*****************FIGURE OUT WHY THIS BLOCK OF CODE IS NOT WORKING******************************************
-
-// When the user clicks on the password filed, show the message box
-password.onfocus = function() {
-	document.getElementById('message').style.display = 'block';
-}
-
-
-// When the user clicks outside of the password field, hide the message box
-password.onblur = function() {
-	document.getElementById('message').style.display = 'none';
-}
-//******************************************************************************************************
-
-
-
-
-
 //When the user starts to type something inside the password field
 password.onkeyup = function() {
 	//validate lowercase letters
