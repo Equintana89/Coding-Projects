@@ -1,9 +1,12 @@
-let email = document.querySelector('#inputEmail');
-let password = document.querySelector('#inputPassword');
-let letter = document.querySelector('#letter');
-let capital = document.querySelector('#capital');
-let number = document.querySelector('#number');
-let length = document.querySelector('#length');
+let email = document.getElementById('inputEmail');
+let password = document.getElementById('inputPassword');
+let letter = document.getElementById('letter');
+let capital = document.getElementById('capital');
+let number = document.getElementById('number');
+let length = document.getElementById('length');
+let mess = document.getElementById('message');
+
+
 
 
 inputEmail.addEventListener('input', function(event) {
@@ -15,15 +18,30 @@ inputEmail.addEventListener('input', function(event) {
 });
 
 
-password.onFocus = function() {
-	document.querySelector('#message').style.display = 'block';
+
+
+
+//*****************FIGURE OUT WHY THIS BLOCK OF CODE IS NOT WORKING******************************************
+
+// When the user clicks on the password filed, show the message box
+password.onfocus = function() {
+	document.getElementById('message').style.display = 'block';
 }
 
-password.onBlur = function() {
-	document.querySelector('#message').style.display = 'none';
-}
 
-password.onKeyup = function() {
+// When the user clicks outside of the password field, hide the message box
+password.onblur = function() {
+	document.getElementById('message').style.display = 'none';
+}
+//******************************************************************************************************
+
+
+
+
+
+//When the user starts to type something inside the password field
+password.onkeyup = function() {
+	//validate lowercase letters
 	let lowerCaseLetters = /[a-z]/g;
 		if(password.value.match(lowerCaseLetters)) {
 			letter.classList.remove('invalid');
@@ -32,8 +50,9 @@ password.onKeyup = function() {
 			letter.classList.remove('valid');
 			letter.classList.add('invalid')
 		}
-}
+};
 
+//validate capital letters
 let upperCaseLetters = /[A-Z]/g;
 	if(password.value.match(upperCaseLetters)) {
 		capital.classList.remove('invalid');
@@ -43,6 +62,7 @@ let upperCaseLetters = /[A-Z]/g;
 		capital.classList.add('invalid');
 	}
 
+//validate numbers
 let numbers = /[0-9]/g;
 	if(password.value.match(numbers)) {
 		number.classList.remove('invalid');
@@ -52,7 +72,8 @@ let numbers = /[0-9]/g;
 		number.classList.add('invalid');
 	}
 
-	if(password.value.length >=8) {
+	//validate length
+	if(password.value.length >= 8) {
 		length.classList.remove('invalid');
 		length.classList.add('valid');
 	} else {
