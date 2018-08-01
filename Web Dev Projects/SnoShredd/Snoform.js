@@ -1,10 +1,10 @@
 let email = document.getElementById('inputEmail');
-let password = document.getElementById('inputPassword');
-let letter = document.getElementById('letter');
-let capital = document.getElementById('capital');
-let number = document.getElementById('number');
-let length = document.getElementById('length');
-let mess = document.getElementById('message');
+//let password = document.getElementById('inputPassword');
+//let letter = document.getElementById('letter');
+//let capital = document.getElementById('capital');
+//let number = document.getElementById('number');
+//let length = document.getElementById('length');
+//let mess = document.getElementById('message');
 
 
 
