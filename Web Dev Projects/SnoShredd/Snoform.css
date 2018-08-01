@@ -54,8 +54,8 @@ form {
 input[type=email],
 input[type=password] {
  -webkit-appearance: none;
-  width : 100%;
-  border: 1px solid #333;
+  width: 100%;
+  border: 1px #333;
   margin: 0;
   font-family: inherit;
   font-size: 90%;
@@ -63,42 +63,9 @@ input[type=password] {
   box-sizing: border-box;
 }
 
-input:invalid {
-	box-shadow: 0 0 5px 1px red;
-}
-
-input:focus:invalid {
-	outline: none;
-}
 
 
-#message {
-  display: none;
-  background: #f1f1f1;
-  color: #000;
-  position: relative;
-  padding: 20px;
-  margin-top: 10px;
-}
 
-#message p {
-  padding: 10px 35px;
-  font-size: 18px;
-  
-}
 
-.valid:before {
-  position: relative;
-  left: -35px;
-  content: "&#10004;";
-}
 
-.invalid {
-  color: red;
-}
 
-.invalid:before {
-  position: relative;
-  left: -35px;
- content: "&#10006;" ;
-}
