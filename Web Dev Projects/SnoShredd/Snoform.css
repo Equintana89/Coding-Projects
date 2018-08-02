@@ -1,6 +1,6 @@
 body {
-    background: cover;    
-	  
+     
+	  background-color: #c5c7c9;
   
   
 }
@@ -11,8 +11,6 @@ html {
     font-family: lato;
     color: white; 
     font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;  
-    background-repeat: no-repeat;
-    background-color: #a4a5a5;
     position: fixed;
     top: 0;
     bottom: 0;

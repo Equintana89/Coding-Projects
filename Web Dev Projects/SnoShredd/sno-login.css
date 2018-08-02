@@ -1,9 +1,7 @@
-body{
-	margin: 0px auto;
-	background-image: url("goggles-reflection.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-
+body {
+  background-image: url('snowysunset.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body,
@@ -14,6 +12,10 @@ html {
     color: white; 
 }
 
+#bod {
+  background-color: #e0e0e0;
+}
+
 .container-form {
 	width: 600px;
 	height: 300px;
@@ -21,7 +23,7 @@ html {
 	background-color: rgba(12, 110, 247, 0.7);
 	border-radius: 25px;
 	margin: 0 auto;
-	margin-top: 300px;
+	margin-top: 200px;
 }
 
 .container-form img {
@@ -37,7 +39,8 @@ html {
 	font-size: 17px;
 	margin-bottom: 20px;
 	background-color: #fff;
-    padding-left: 15px;
+  padding-left: 15px;
+  border-radius: 8px;
 }
 
 .container-form input: :hover {
@@ -47,9 +50,9 @@ html {
 
 
 .form-input i {
-   padding-right: 20px;
-   font-size: 20px;
-   color: black;
+   padding-right: 8px;
+   font-size: 15px;
+   color: rgba(98, 104, 109, 0.7);
 
 }
 
@@ -101,9 +104,9 @@ input {font-family: 'FontAwesome'; }
    }
 
 
-   .forgotpass {
-  	color: white;
-  	padding-right: 50px;
+.forgotpass {
+  color: white;
+  padding-right: 50px;
  }
 
  .forgotuser {
