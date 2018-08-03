@@ -23,10 +23,10 @@ html {
 }
 
 .container-form {
-	width: 58%;
-	height: 60%;
+	width: 45%;
+	height: 75%;
 	text-align: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 1);
   background-attachment: fixed;
   background-position: center center;
 	border-radius: 25px;
@@ -34,21 +34,35 @@ html {
 	margin-top: 100px;
 }
 
-.container-form img {
-	height: 120px;
-	margin-top: -60px;
-	margin-bottom: 30px;
-  border-radius: 30px;
+.usr {
+  margin-bottom: 15px;
+  margin-top: 60px;
+  align-content: center;
+}
+
+.container-form hr {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 1px;
+  padding-right: 20%;
+  width: 65%;
+
+}
+
+#logo {
+  font-size: 35px;
+  text-align: fixed center;
+  padding-top: 25px;
 }
 
 .container-form input {
 	height: 40px; 
-	width: 300px;
+	width: 70%;
 	font-size: 17px;
 	margin-bottom: 20px;
 	background-color: #fff;
   padding-left: 15px;
   border-radius: 8px;
+  size: fixed;
 }
 
 .container-form input: :hover {
@@ -64,35 +78,12 @@ html {
 
 }
 
-/*.form-input input[type="text"] {
-   position: absolute;
-}
-
-input {font-family: 'FontAwesome'; }
-
-
-.form-input::before {
-	content: "\f007"; 
-	
-
-}*/
-
-
 
 .button {
    border-top: 1px solid #a799eb;
-   background: #4155b5;
-   background: -webkit-gradient(linear, left top, left bottom, from(#4a5fe6), to(#4155b5));
-   background: -webkit-linear-gradient(top, #4a5fe6, #4155b5);
-   background: -moz-linear-gradient(top, #4a5fe6, #4155b5);
-   background: -ms-linear-gradient(top, #4a5fe6, #4155b5);
-   background: -o-linear-gradient(top, #4a5fe6, #4155b5);
    padding: 7.5px 15px;
-   -webkit-border-radius: 8px;
-   -moz-border-radius: 8px;
    border-radius: 8px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   background-color: rgb(41, 119, 244);
    box-shadow: rgba(0,0,0,1) 0 1px 0;
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: white;
@@ -102,26 +93,59 @@ input {font-family: 'FontAwesome'; }
    vertical-align: middle;
    }
 .button:hover {
-   border-top-color: #3915b0;
-   background: #42b8f7;
-   color: #fff;
+   border-top-color: #9f9fa1;
+   background: rgba(41, 119, 244, 0.6);
    }
 .button:active {
    border-top-color: #0eb026;
    background: #0eb026;
    }
 
+   div .btn:hover {
+     border-top: #9f9fa1;
+     background: rgba(41, 119, 244, 0.6);
+     color: #fff;
+   }
+
+   div .btn:active {
+     border-top: #0eb026;
+     background: #0eb026;
+     color: #fff;
+   }
+
+   div .btn {
+   border-top: 1px solid #a799eb;
+   background: rgb(41, 119, 244);
+   padding: 7.5px 15px;
+   border-radius: 8px;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: rgb(255, 255, 255);
+   font-size: 13px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+
+   }
+
 
 .forgotpass {
-  color: rgb(0, 0, 0);
+  color: rgb(26, 11, 161);
   padding-right: 50px;
-  
+  font-family: 'Lato', sans-serif;
+
  }
 
  .forgotuser {
- 	color: rgb(0, 0, 0);
+   color: rgb(26, 11, 161);
+   font-family: 'Lato', sans-serif;
+
  }
 
+ div h5 {
+   font-family: 'Lato', sans-serif;
+   color: rgba(56, 55, 55, 0.5);
+ }
 
 
 
