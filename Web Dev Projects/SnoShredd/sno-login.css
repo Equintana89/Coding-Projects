@@ -48,10 +48,11 @@ html {
 
 }
 
-#logo {
+form #logo {
   font-size: 35px;
   text-align: fixed center;
   padding-top: 25px;
+  color: rgb(42, 43, 43);
 }
 
 .container-form input {
