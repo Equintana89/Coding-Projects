@@ -24,7 +24,7 @@ html {
 
 .container-form {
 	width: 45%;
-	height: 55%;
+	height: 500px;
 	text-align: center;
   background-color: rgba(255, 255, 255, 1);
   background-attachment: fixed;
@@ -38,6 +38,9 @@ html {
   margin-bottom: 15px;
   margin-top: 60px;
   align-content: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .container-form hr {
@@ -53,11 +56,12 @@ form #logo {
   text-align: fixed center;
   padding-top: 25px;
   color: rgb(42, 43, 43);
+  width: 50%;
 }
 
 .container-form input {
 	height: 40px; 
-	width: 70%;
+	width: 60%;
 	font-size: 17px;
 	margin-bottom: 20px;
 	background-color: #fff;
@@ -102,6 +106,24 @@ form #logo {
    background: #0eb026;
    }
 
+    div .btn {
+   border-top: 1px solid #a799eb;
+   background: rgb(41, 119, 244);
+   padding: 7.5px 15px;
+   border-radius: 8px;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: rgb(255, 255, 255);
+   font-size: 13px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   width: 60%;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   white-space: nowrap;
+   }
+
    div .btn:hover {
      border-top: #9f9fa1;
      background: rgba(41, 119, 244, 0.6);
@@ -114,32 +136,25 @@ form #logo {
      color: #fff;
    }
 
-   div .btn {
-   border-top: 1px solid #a799eb;
-   background: rgb(41, 119, 244);
-   padding: 7.5px 15px;
-   border-radius: 8px;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: rgb(255, 255, 255);
-   font-size: 13px;
-   font-family: Georgia, serif;
-   text-decoration: none;
-   vertical-align: middle;
-
-   }
+  
 
 
 .forgotpass {
   color: rgb(26, 11, 161);
   padding-right: 50px;
   font-family: 'Lato', sans-serif;
+  text-overflow: ellipsis; 
+  overflow: hidden;
+  white-space: nowrap;
 
  }
 
  .forgotuser {
    color: rgb(26, 11, 161);
    font-family: 'Lato', sans-serif;
+  text-overflow: ellipsis; 
+  overflow: hidden;
+  white-space: nowrap;
 
  }
 
