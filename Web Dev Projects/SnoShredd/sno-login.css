@@ -14,13 +14,11 @@ body,
 html {
     width: 100%;
     height: 100%;
-    font-family: lato;
+    font-family: 'Lato', sans-serif;
     color: white; 
 }
 
-#bod {
-  background-color: #e0e0e0;
-}
+
 
 .container-form {
 	width: 45%;
@@ -31,7 +29,7 @@ html {
   background-position: center center;
 	border-radius: 25px;
 	margin: 0 auto;
-	margin-top: 100px;
+	margin-top: 20%;
 }
 
 .usr {
@@ -118,7 +116,7 @@ form #logo {
    font-family: Georgia, serif;
    text-decoration: none;
    vertical-align: middle;
-   width: 60%;
+   width: 50%;
    text-overflow: ellipsis;
    overflow: hidden;
    white-space: nowrap;

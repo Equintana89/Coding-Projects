@@ -1,14 +1,9 @@
-body {
-     
-	  background-color: #c5c7c9;
-  
-  
-}
+
 
 body,
 html {
   
-    font-family: lato;
+    font-family: sans-serif;
     color: white; 
     font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;  
     position: fixed;
@@ -20,13 +15,13 @@ html {
 
 .container form {
   padding-top: 20px;
-  width: 60%; 
+  width: 100%; 
 	height: 50%;
 	text-align: center;
 	background-color: rgba(12, 152, 183, 0.6);
 	border-radius: 4px;
 	margin:  auto;
-  margin-top: 15px;
+  margin-top: 90px;
   border-radius: 15px;
 }
 
@@ -62,8 +57,8 @@ input[type=password] {
 }
 
 
-#gridCheck {
-  
+hr {
+  width: 100%;
 }
 
 
