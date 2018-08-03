@@ -20,8 +20,8 @@ html {
 
 .container form {
   padding-top: 20px;
-  width: 900px; 
-	height: 400px;
+  width: 60%; 
+	height: 50%;
 	text-align: center;
 	background-color: rgba(12, 152, 183, 0.6);
 	border-radius: 4px;
