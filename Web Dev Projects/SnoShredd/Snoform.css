@@ -83,12 +83,13 @@ hr {
 }
 
 #malefemale {
-  width: 15%;
+  width: 17%;
   border-radius: 15px;
   height: 25px;
   outline: none;
   font-weight: bold;
   font-size: 13px;
+  text-align: center;
 }
 
 
