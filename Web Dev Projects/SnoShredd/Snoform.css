@@ -1,32 +1,39 @@
-
+body {
+  background-image: url('whitebrick.jpg');
+}
 
 body,
 html {
   
-    font-family: sans-serif;
-    color: white; 
-    font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;  
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+  font-family: 'Merriweather Sans', 'Fira Sans Condensed', 'Port Lligat Sans', sans-serif;
+  color: white; 
+  font: normal
+    
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+div h3 {
+  color: aliceblue;
 }
 
 .container form {
   padding-top: 20px;
-  width: 100%; 
-	height: 50%;
+  width: 75%; 
+	
 	text-align: center;
-	background-color: rgba(12, 152, 183, 0.6);
+	background-color: rgba(12, 152, 183, 0.8);
 	border-radius: 4px;
 	margin:  auto;
-  margin-top: 90px;
+  margin-top: 5%;
+  margin-bottom: 35px;
   border-radius: 15px;
 }
 
 label {
-  color: aliceblue;
+  color: rgb(240, 248, 255);
   font-weight: bolder;
 }
 
@@ -34,15 +41,15 @@ form {
   padding-top: 20px;
 }
 
-.title {
+#logo {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 8px;
-  font-family: lato;
-  color: #058989;
+  
+  color: rgb(240, 248, 255);
   font-size: 40px;
   font-weight: bolder;
-}
+} 
 
 input[type=email],
 input[type=password] {
@@ -59,50 +66,46 @@ input[type=password] {
 
 hr {
   width: 95%;
+
 }
 
-#skill, #style, #boardBrand, #age {
-  width: 35%;
+#skill, #boardBrand, #age, #style, #mtn {
+  width: 70%;
   height: 25px;
   margin-left: 5%;
   margin-bottom: 5%;
   border-radius: 15px;
   border-color: aliceblue;
   outline: none;
+  font-size: 13px;
+  font-weight: bold;
+  align-items: center;
 }
 
-#mtn {
-  border: none;
-  border-radius: 5px;
-  width: 35%;
-  margin-right: 11%;
-  
-}
-
-#genderM, #genderF {
-  margin-left: 10px;
-}
-
-#genderF {
-  margin-left: 15px;
-}
-
-.form-radio {
-  margin: auto;
-  margin-right: 10%;
-  padding-bottom: 25px;
+#malefemale {
+  width: 15%;
+  border-radius: 15px;
+  height: 25px;
+  outline: none;
+  font-weight: bold;
+  font-size: 13px;
 }
 
 
 
+div .form-check {
+  margin: 5%;
+  margin-bottom: 3%;
+}
 
+input{
+  padding-left: 15px;
+}
 
+select {
+  padding-left: 10px;
+}
 
-
-
-
-
-
-
-
-
+.btn {
+  margin-bottom: 6%;
+}
