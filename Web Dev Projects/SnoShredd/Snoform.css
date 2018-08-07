@@ -58,8 +58,48 @@ input[type=password] {
 
 
 hr {
-  width: 100%;
+  width: 95%;
 }
+
+#skill, #style, #boardBrand, #age {
+  width: 35%;
+  height: 25px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  border-radius: 15px;
+  border-color: aliceblue;
+  outline: none;
+}
+
+#mtn {
+  border: none;
+  border-radius: 5px;
+  width: 35%;
+  margin-right: 11%;
+  
+}
+
+#genderM, #genderF {
+  margin-left: 10px;
+}
+
+#genderF {
+  margin-left: 15px;
+}
+
+.form-radio {
+  margin: auto;
+  margin-right: 10%;
+  padding-bottom: 25px;
+}
+
+
+
+
+
+
+
+
 
 
 
