@@ -23,3 +23,7 @@ ul {
 	padding: 0px;
 	list-style: none;
 }
+
+#btn {
+	outline: none;
+}
