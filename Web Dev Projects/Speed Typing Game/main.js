@@ -4,8 +4,8 @@ window.addEventListener('load', init);
 
 // Availabel levels
 const levels = {
-    easy: 5,
-    medium: 3,
+    easy: 4,
+    medium: 2,
     hard: 1
 }
 
@@ -25,36 +25,39 @@ const message = document.querySelector('#message');
 const seconds = document.querySelector('#seconds');
 
 const words = [
-    'CHIGOES',
-    'CODFISH',
-    'COEDITS',
-    'DITCHES',
-    'DOGFISH',
-    'FIDGETS',
-    'FITCHES',
-    'FOISTED',
-    'GHOSTED',
-    'GOTHICS',
-    'HOGTIED',
-    'HOGTIES',
-    'HOISTED',
-    'SHIFTED',
-    'SIGHTED',
-    'CESTOI',
-    'CHIDES',
-    'CHIEFS',
-    'CHIGOE',
-    'COEDIT',
-    'COIFED',
-    'COSHED',
-    'COSIED',
-    'COSTED',
-    'DEFOGS',
-    'DHOTIS',
-    'DICOTS',
-    'DIGEST',
-    'DIGHTS',
-    'DOGIES'
+'aerobics',
+'archer',
+'archery',
+'arena',
+'arrow',
+'athlete',
+'athletics',
+'axel',
+'badminton',
+'ball',
+'base',
+'baseball',
+'basketball',
+'bat',
+'baton',
+'batter',
+'batting',
+'biathlon',
+'bicycle',
+'bicycling',
+'bike',
+'biking',
+'billiards',
+'bobsleigh',
+'bocce',
+'boomerang',
+'boules',
+'bow',
+'bowler',
+'bowling',
+'boxer',
+'boxing',
+'bunt'
 ];
 
 //Initialize game
