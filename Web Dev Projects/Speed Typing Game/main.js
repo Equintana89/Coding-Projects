@@ -10,7 +10,7 @@ const levels = {
 }
 
 // To change level
-const currentLevel = levels.easy;
+let currentLevel = ;
 
 let time = currentLevel;
 let score = 0;
@@ -60,10 +60,21 @@ const words = [
 'bunt'
 ];
 
+
+function selectLevel() {
+    if(currentLevel === levels.easy) {
+       return seconds.innerHTML = levels.easy;
+    } else if(currentLevel === levels.medium) {
+       return seconds.innerHTML = levels.medium;
+    } else {
+        return seconds.innerHTML ==levels.hard
+    }
+    
+}
 //Initialize game
 function init() {
     // Show number of seconds in UI
-    seconds.innerHTML = currentLevel;
+    selectLevel();
     // Load word from array
     showWord(words);
     // start matching on word input
