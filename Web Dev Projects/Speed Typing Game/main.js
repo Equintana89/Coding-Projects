@@ -3,28 +3,28 @@ window.addEventListener('load', init);
 //Globals
 
 // Availabel levels
-const levels = {
+let levels = {
     easy: 4,
     medium: 2,
     hard: 1
 }
 
 // To change level
-let currentLevel = ;
+let currentLevel = levels.easy;
 
 let time = currentLevel;
 let score = 0;
 let isPlaying;
 
 //DOM Elements
-const wordInput = document.querySelector('#word-input');
-const currentWord = document.querySelector('#currentWord');
-const scoreDisplay = document.querySelector('#scoreDisplay');
-const timeDisplay = document.querySelector('#timeDisplay');
-const message = document.querySelector('#message');
-const seconds = document.querySelector('#seconds');
+let wordInput = document.querySelector('#word-input');
+let currentWord = document.querySelector('#currentWord');
+let scoreDisplay = document.querySelector('#scoreDisplay');
+let timeDisplay = document.querySelector('#timeDisplay');
+let message = document.querySelector('#message');
+let seconds = document.querySelector('#seconds');
 
-const words = [
+let words = [
 'aerobics',
 'archer',
 'archery',
@@ -61,20 +61,11 @@ const words = [
 ];
 
 
-function selectLevel() {
-    if(currentLevel === levels.easy) {
-       return seconds.innerHTML = levels.easy;
-    } else if(currentLevel === levels.medium) {
-       return seconds.innerHTML = levels.medium;
-    } else {
-        return seconds.innerHTML ==levels.hard
-    }
-    
-}
+
 //Initialize game
 function init() {
     // Show number of seconds in UI
-    selectLevel();
+    seconds.innerHTML = currentLevel;
     // Load word from array
     showWord(words);
     // start matching on word input
@@ -120,7 +111,7 @@ function matchWords() {
 
 function showWord(words) {
     //Generate random array index
-    const randIndex = Math.floor(Math.random() * words.length);
+    let randIndex = Math.floor(Math.random() * words.length);
     // Output random word
     currentWord.innerHTML = words[randIndex];
 }
