@@ -17,11 +17,14 @@
         <!-- Word & Input -->
         <div class="row">
             <div class="col-md-6 mx-auto">
-                <select id="difficulty">
-                    <option>Easy</option>
-                    <option>Medium</option>
-                    <option>Hard</option>
-                </select>
+                <div>
+                    <input type="radio" id="easy" name="Easy">
+                    <label for="">Easy</label>
+                    <input type="radio" id="Medium">
+                    <label for="">Medium</label>
+                    <input type="radio" id="hard">
+                    <label for="">Hard</label>
+                </div>    
 
                 <p class="lead">Type The Given Word within <span class="text-success" id="seconds">5</span> Seconds:</p>
                 <h2 class="display-2 mb-5" id="currentWord">Hello</h2>
