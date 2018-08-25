@@ -9,11 +9,7 @@ import {HEROES} from '../mock-heroes/mock-heroes.component';
 })
 export class HeroesComponent implements OnInit {
   heroes = HEROES;
-    
-  
-   
-
-  
+ 
   constructor() { }
 
   ngOnInit() {

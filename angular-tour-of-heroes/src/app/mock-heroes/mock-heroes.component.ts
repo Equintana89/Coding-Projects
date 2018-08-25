@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Hero } from '../hero/hero.component';
 
 @Component({
   selector: 'app-mock-heroes',
@@ -13,7 +14,6 @@ export class MockHeroesComponent implements OnInit {
   }
 
 }
-import { Hero } from '../hero/hero.component';
 
 
 export const HEROES: Hero[] = [
