@@ -23,8 +23,12 @@
 }
 
 .heroes li.selected:hover {
-      background-color: #BBD8DC !important;
+      background-color: rgb(173, 178, 179) !important;
       color: white;
+}
+
+.heroes li.selected {
+      background-color: #607D8B;
 }
 
 .heroes li:hover {
