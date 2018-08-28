@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroComponent } from './hero/hero.component';
 import { MockHeroesComponent } from './mock-heroes/mock-heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     HeroComponent,
-    MockHeroesComponent
+    MockHeroesComponent,
+    HeroDetailComponent
   ],
 
   imports: [
