@@ -8,6 +8,8 @@ import { HeroComponent } from './hero/hero.component';
 import { MockHeroesComponent } from './mock-heroes/mock-heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +18,14 @@ import { MessagesComponent } from './messages/messages.component';
     HeroComponent,
     MockHeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
 
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   
   providers: [],
