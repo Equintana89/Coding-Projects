@@ -11,6 +11,8 @@ export class UsersComponent implements OnInit {
     showExtended: boolean = true;
     loaded: boolean = false;
     enableAdd: boolean = true;
+    currentClasses = {};
+    currentStyles = {};
 
   constructor() { }
 
@@ -26,7 +28,8 @@ export class UsersComponent implements OnInit {
                 city: 'West Valley City',
                 state: "UT"
           },
-          image: 'https://picsum.photos/200/300/?image=67'
+          image: 'https://picsum.photos/600/600/?image=67',
+          isActive: true
 
         },
 
@@ -39,7 +42,8 @@ export class UsersComponent implements OnInit {
                 city: 'West Valley City',
                 state: "UT"
           },
-          image: 'https://picsum.photos/600/600/?image=19'
+          image: 'https://picsum.photos/600/600/?image=19',
+          isActive: false
 
         },
 
@@ -52,7 +56,8 @@ export class UsersComponent implements OnInit {
                 city: 'West Valley City',
                 state: "UT"
           },
-          image: 'https://picsum.photos/600/600/?image=21'
+          image: 'https://picsum.photos/600/600/?image=21',
+          isActive: true
 
         },
 
@@ -66,7 +71,8 @@ export class UsersComponent implements OnInit {
                 city: 'West Valley City',
                 state: "UT"
           },
-          image: 'https://picsum.photos/600/600/?image=11'
+          image: 'https://picsum.photos/600/600/?image=11',
+          isActive: false
 
         },
 
@@ -79,7 +85,8 @@ export class UsersComponent implements OnInit {
                 city: 'West Valley City',
                 state: "UT"
           },
-          image: 'https://picsum.photos/600/600/?image=30'
+          image: 'https://picsum.photos/600/600/?image=30',
+          isActive: true
 
         }
 
@@ -93,10 +100,27 @@ export class UsersComponent implements OnInit {
       //     lastName: 'Johnson',
          
       // });
+
+      this.setCurrentClasses(); 
+      this.setCurrentStyles();
     }
 
     addUser(user: User) {
       this.users.push(user);
+    }
+
+    setCurrentClasses() {
+      this.currentClasses = {
+        'btn-success' : this.enableAdd,
+        'big-text' : this.showExtended
+      }
+    }
+
+    setCurrentStyles() {
+      this.currentStyles = {
+        'padding-top' : this.showExtended ? '0' : '40px',
+        'font-size': this.showExtended ? '' : '30px'
+      }
     }
 
 }
