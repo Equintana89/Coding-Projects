@@ -10,6 +10,7 @@ export class UsersComponent implements OnInit {
     users: User[];
     showExtended: boolean = true;
     loaded: boolean = false;
+    enableAdd: boolean = true;
 
   constructor() { }
 
@@ -24,7 +25,9 @@ export class UsersComponent implements OnInit {
                 street: '3008 Lake Meadow Dr.',
                 city: 'West Valley City',
                 state: "UT"
-          }
+          },
+          image: 'https://picsum.photos/200/300/?image=67'
+
         },
 
         {
@@ -35,7 +38,9 @@ export class UsersComponent implements OnInit {
                 street: '3008 Lake Meadow Dr.',
                 city: 'West Valley City',
                 state: "UT"
-          }
+          },
+          image: 'https://picsum.photos/600/600/?image=19'
+
         },
 
         {
@@ -46,7 +51,9 @@ export class UsersComponent implements OnInit {
                 street: '3008 Lake Meadow Dr.',
                 city: 'West Valley City',
                 state: "UT"
-          }
+          },
+          image: 'https://picsum.photos/600/600/?image=21'
+
         },
 
 
@@ -58,7 +65,9 @@ export class UsersComponent implements OnInit {
                 street: '3008 Lake Meadow Dr.',
                 city: 'West Valley City',
                 state: "UT"
-          }
+          },
+          image: 'https://picsum.photos/600/600/?image=11'
+
         },
 
         {
@@ -69,7 +78,9 @@ export class UsersComponent implements OnInit {
                 street: '3008 Lake Meadow Dr.',
                 city: 'West Valley City',
                 state: "UT"
-          }
+          },
+          image: 'https://picsum.photos/600/600/?image=30'
+
         }
 
       ];
@@ -77,11 +88,11 @@ export class UsersComponent implements OnInit {
       this.loaded = true;
       
 
-      this.addUser({
-          firstName: 'Jacob',
-          lastName: 'Johnson',
+      // this.addUser({
+      //     firstName: 'Jacob',
+      //     lastName: 'Johnson',
          
-      });
+      // });
     }
 
     addUser(user: User) {
