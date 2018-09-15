@@ -8,11 +8,10 @@ import { User } from '../../models/User';
 })
 export class UsersComponent implements OnInit {
     users: User[];
-    showExtended: boolean = true;
+    showExtended: boolean = false;
     loaded: boolean = false;
     enableAdd: boolean = true;
-    currentClasses = {};
-    currentStyles = {};
+    
 
   constructor() { }
 
@@ -28,8 +27,8 @@ export class UsersComponent implements OnInit {
                 city: 'West Valley City',
                 state: "UT"
           },
-          image: 'https://picsum.photos/600/600/?image=67',
-          isActive: true
+          isActive: true,
+          registered: new Date('01/02/2018 08:30:00')
 
         },
 
@@ -42,8 +41,8 @@ export class UsersComponent implements OnInit {
                 city: 'West Valley City',
                 state: "UT"
           },
-          image: 'https://picsum.photos/600/600/?image=19',
-          isActive: false
+          isActive: false,
+          registered: new Date('11/22/2018 05:20:00')
 
         },
 
@@ -56,8 +55,8 @@ export class UsersComponent implements OnInit {
                 city: 'West Valley City',
                 state: "UT"
           },
-          image: 'https://picsum.photos/600/600/?image=21',
-          isActive: true
+          isActive: true,
+          registered: new Date('07/30/2007 07:36:00')
 
         },
 
@@ -71,8 +70,8 @@ export class UsersComponent implements OnInit {
                 city: 'West Valley City',
                 state: "UT"
           },
-          image: 'https://picsum.photos/600/600/?image=11',
-          isActive: false
+          isActive: false,
+          registered: new Date('03/08/2011 09:30:00')
 
         },
 
@@ -85,8 +84,8 @@ export class UsersComponent implements OnInit {
                 city: 'West Valley City',
                 state: "UT"
           },
-          image: 'https://picsum.photos/600/600/?image=30',
-          isActive: true
+          isActive: true,
+          registered: new Date('02/09/2018 08:54:00')
 
         }
 
@@ -101,26 +100,15 @@ export class UsersComponent implements OnInit {
          
       // });
 
-      this.setCurrentClasses(); 
-      this.setCurrentStyles();
+      
     }
 
     addUser(user: User) {
       this.users.push(user);
     }
 
-    setCurrentClasses() {
-      this.currentClasses = {
-        'btn-success' : this.enableAdd,
-        'big-text' : this.showExtended
-      }
+    fireEvent(e) {
+      // console.log('button clicked');
+      console.log(e.type);
     }
-
-    setCurrentStyles() {
-      this.currentStyles = {
-        'padding-top' : this.showExtended ? '0' : '40px',
-        'font-size': this.showExtended ? '' : '30px'
-      }
-    }
-
 }
