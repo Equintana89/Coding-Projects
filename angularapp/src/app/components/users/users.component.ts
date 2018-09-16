@@ -8,7 +8,7 @@ import { User } from '../../models/User';
 })
 export class UsersComponent implements OnInit {
     users: User[];
-    showExtended: boolean = false;
+    showExtended: boolean = true;
     loaded: boolean = false;
     enableAdd: boolean = true;
     
@@ -28,7 +28,8 @@ export class UsersComponent implements OnInit {
                 state: "UT"
           },
           isActive: true,
-          registered: new Date('01/02/2018 08:30:00')
+          registered: new Date('01/02/2018 08:30:00'),
+          hide: true
 
         },
 
@@ -42,7 +43,8 @@ export class UsersComponent implements OnInit {
                 state: "UT"
           },
           isActive: false,
-          registered: new Date('11/22/2018 05:20:00')
+          registered: new Date('11/22/2018 05:20:00'),
+          hide: true
 
         },
 
@@ -56,7 +58,8 @@ export class UsersComponent implements OnInit {
                 state: "UT"
           },
           isActive: true,
-          registered: new Date('07/30/2007 07:36:00')
+          registered: new Date('07/30/2007 07:36:00'),
+          hide: true
 
         },
 
@@ -71,7 +74,8 @@ export class UsersComponent implements OnInit {
                 state: "UT"
           },
           isActive: false,
-          registered: new Date('03/08/2011 09:30:00')
+          registered: new Date('03/08/2011 09:30:00'),
+          hide: true
 
         },
 
@@ -85,7 +89,8 @@ export class UsersComponent implements OnInit {
                 state: "UT"
           },
           isActive: true,
-          registered: new Date('02/09/2018 08:54:00')
+          registered: new Date('02/09/2018 08:54:00'),
+          hide: true
 
         }
 
@@ -107,8 +112,10 @@ export class UsersComponent implements OnInit {
       this.users.push(user);
     }
 
-    fireEvent(e) {
-      // console.log('button clicked');
-      console.log(e.type);
-    }
+  
+  //  toggleHide(user) {
+  //    user.hide = !user.hide; //this line can be added to the html file instead.
+  //  }
+
+
 }
