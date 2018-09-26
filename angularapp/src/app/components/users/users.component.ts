@@ -10,19 +10,14 @@ export class UsersComponent implements OnInit {
     user: User = {
       firstName: '',
       lastName: '',
-      age: null,
-      address: {
-        street: '',
-        city: '',
-        state: ''
-      }
+      email: ''
     }
     users: User[];
     showExtended: boolean = true;
     loaded: boolean = false;
     enableAdd: boolean = true;
     showUserForm: boolean = false;
-    
+    errors: any;
 
   constructor() { }
 
@@ -32,12 +27,7 @@ export class UsersComponent implements OnInit {
         {
           firstName: 'Eduardo',
           lastName: 'Quintana',
-          age: 29,
-          address: {
-                street: '3008 Lake Meadow Dr.',
-                city: 'West Valley City',
-                state: "UT"
-          },
+          email: '3dd1389@gmail.com',
           isActive: true,
           registered: new Date('01/02/2018 08:30:00'),
           hide: true
@@ -47,12 +37,7 @@ export class UsersComponent implements OnInit {
         {
           firstName: 'Abish',
           lastName: 'Quintana',
-          age: 30,
-          address: {
-                street: '3008 Lake Meadow Dr.',
-                city: 'West Valley City',
-                state: "UT"
-          },
+          email: 'abishdelacruz@gmail.com',
           isActive: false,
           registered: new Date('11/22/2018 05:20:00'),
           hide: true
@@ -62,12 +47,7 @@ export class UsersComponent implements OnInit {
         {
           firstName: 'Lilian',
           lastName: 'Quintana',
-          age: 5,
-          address: {
-                street: '3008 Lake Meadow Dr.',
-                city: 'West Valley City',
-                state: "UT"
-          },
+          email: 'lilian@gmail.com',
           isActive: true,
           registered: new Date('07/30/2007 07:36:00'),
           hide: true
@@ -78,12 +58,7 @@ export class UsersComponent implements OnInit {
         {
           firstName: 'Isai',
           lastName: 'Quintana',
-          age: 3,
-          address: {
-                street: '3008 Lake Meadow Dr.',
-                city: 'West Valley City',
-                state: "UT"
-          },
+          email: 'isai@gmail.com',
           isActive: false,
           registered: new Date('03/08/2011 09:30:00'),
           hide: true
@@ -93,12 +68,7 @@ export class UsersComponent implements OnInit {
         {
           firstName: 'Lena',
           lastName: 'Quintana',
-          age: 1,
-          address: {
-                street: '3008 Lake Meadow Dr.',
-                city: 'West Valley City',
-                state: "UT"
-          },
+          email: 'lena@gmail.com',
           isActive: true,
           registered: new Date('02/09/2018 08:54:00'),
           hide: true
@@ -119,39 +89,22 @@ export class UsersComponent implements OnInit {
       
     }
 
-    addUser() {
-      this.user.isActive = true;
-      this.user.registered = new Date();
+  //   addUser() {
+  //     this.user.isActive = true;
+  //     this.user.registered = new Date();
 
-      this.users.unshift(this.user);
+  //     this.users.unshift(this.user);
 
-      this.user = {
-        firstName: '',
-      lastName: '',
-      age: null,
-      address: {
-        street: '',
-        city: '',
-        state: ''
-      }
-    }
-  }
+  //     this.user = {
+  //       firstName: '',
+  //     lastName: '',
+  //     email: ''
+  //   }
+  // }
 
     onSubmit(e) {
       console.log(123);
 
       e.preventDefault();
     }
-
-    fireEvent(e) {
-      console.log(e.type);
-      console.log(e.target.value);
-
-
-    }
-  
-  //  toggleHide(user) {
-  //    user.hide = !user.hide; //this line can be added to the html file instead.
-  //  }
-
-  }
+}
