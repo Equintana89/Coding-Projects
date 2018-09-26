@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { DataService } from '../../services/data.service';
 import { User } from '../../models/User';
 
 @Component({
@@ -18,66 +19,21 @@ export class UsersComponent implements OnInit {
     enableAdd: boolean = true;
     showUserForm: boolean = false;
     @ViewChild('userForm') form: any;
+    data: any;
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    
-      this.users = [
-        {
-          firstName: 'Eduardo',
-          lastName: 'Quintana',
-          email: '3dd1389@gmail.com',
-          isActive: true,
-          registered: new Date('01/02/2018 08:30:00'),
-          hide: true
+    this.dataService.getData().subscribe(data => {
+      console.log(data);
+    })
 
-        },
+   this.dataService.getUsers().subscribe(users => {
+     this.users = users;
+     this.loaded = true;
 
-        {
-          firstName: 'Abish',
-          lastName: 'Quintana',
-          email: 'abishdelacruz@gmail.com',
-          isActive: false,
-          registered: new Date('11/22/2018 05:20:00'),
-          hide: true
+   });
 
-        },
-
-        {
-          firstName: 'Lilian',
-          lastName: 'Quintana',
-          email: 'lilian@gmail.com',
-          isActive: true,
-          registered: new Date('07/30/2007 07:36:00'),
-          hide: true
-
-        },
-
-
-        {
-          firstName: 'Isai',
-          lastName: 'Quintana',
-          email: 'isai@gmail.com',
-          isActive: false,
-          registered: new Date('03/08/2011 09:30:00'),
-          hide: true
-
-        },
-
-        {
-          firstName: 'Lena',
-          lastName: 'Quintana',
-          email: 'lena@gmail.com',
-          isActive: true,
-          registered: new Date('02/09/2018 08:54:00'),
-          hide: true
-
-        }
-
-      ];
-
-      this.loaded = true;
       
 
       // this.addUser({
@@ -110,8 +66,7 @@ export class UsersComponent implements OnInit {
         value.registered = new Date();
         value.hide = true;
 
-        this.users.unshift(value);
-
+        this.dataService.addUser(value);
         this.form.reset();
       }
       
