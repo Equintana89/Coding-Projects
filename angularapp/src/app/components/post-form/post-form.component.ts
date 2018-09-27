@@ -9,7 +9,7 @@ import { Post } from '../../models/Post';
   styleUrls: ['./post-form.component.css']
 })
 export class PostFormComponent implements OnInit {
-  post: Post[];
+  post: Post;
   @Output() newPost: EventEmitter<Post> = new EventEmitter();
 
   constructor(private postService: PostService) { }
@@ -22,7 +22,7 @@ export class PostFormComponent implements OnInit {
       alert('Please add post');
     } else {
       this.postService.savePost({title, body} as Post).subscribe(post => {
-        console.log(post);
+        this.newPost.emit(post);
       });
     }
   }
