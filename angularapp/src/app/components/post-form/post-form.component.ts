@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { PostService } from '../../services/post.service';
 
 import { Post } from '../../models/Post';
@@ -9,6 +9,8 @@ import { Post } from '../../models/Post';
   styleUrls: ['./post-form.component.css']
 })
 export class PostFormComponent implements OnInit {
+  post: Post[];
+  @Output() newPost: EventEmitter<Post> = new EventEmitter();
 
   constructor(private postService: PostService) { }
 
@@ -21,7 +23,7 @@ export class PostFormComponent implements OnInit {
     } else {
       this.postService.savePost({title, body} as Post).subscribe(post => {
         console.log(post);
-      })
+      });
     }
   }
 }

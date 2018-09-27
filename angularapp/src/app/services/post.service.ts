@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { Post } from '../models/Post';
 
 const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type' : 'application.json' })
+  headers: new HttpHeaders({ 'Content-Type' : 'application/json' })
 }
 
 @Injectable({
@@ -13,6 +13,7 @@ const httpOptions = {
 })
 export class PostService {
   postsUrl: string = 'https://jsonplaceholder.typicode.com/posts';
+
   constructor(private http: HttpClient) { }
 
     getPosts() : Observable<Post[]> {
