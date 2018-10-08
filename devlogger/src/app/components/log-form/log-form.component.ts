@@ -31,7 +31,7 @@ export class LogFormComponent implements OnInit {
     });
   }
   onSubmit() {
-    //Check id new log
+    //Check if new log
     if(this.isNew) {
       //create new log
       const newLog = {
@@ -51,6 +51,16 @@ export class LogFormComponent implements OnInit {
       //Update Log
       this.logService.updateLog(updLog);
     }
+    //clear state
+    this.clearState();
+  }
+
+  clearState() {
+    this.isNew = false;
+    this.id = '';
+    this.text = '';
+    this.date = '';
+    this.logService.clearState();
   }
 
   generateId() {
