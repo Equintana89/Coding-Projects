@@ -16,7 +16,7 @@ export class AddClientComponent implements OnInit {
     email: '',
     phone: '',
     balance: 0
-  }
+  };
 
   disableBalanceOnAdd: boolean = true;
 
@@ -25,4 +25,5 @@ export class AddClientComponent implements OnInit {
   ngOnInit() {
   }
 
+  
 }
