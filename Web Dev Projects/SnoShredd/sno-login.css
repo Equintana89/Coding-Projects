@@ -41,6 +41,8 @@ html {
   white-space: nowrap;
 }
 
+
+
 .container-form hr {
   background-color: rgba(0, 0, 0, 0.3);
   height: 1px;
@@ -71,6 +73,15 @@ form #logo {
 .container-form input: :hover {
     border: #fff;
     background: #42b8f7;
+}
+
+.container-form input[type="text"],input[type="password"] {
+  width:300px;
+  height:40px;
+  padding-left:10px;
+  margin-top:10px;
+  border:1px solid #D8D8D8;
+
 }
 
 
