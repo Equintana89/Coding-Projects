@@ -93,35 +93,13 @@ form #logo {
 }
 
 
-.button {
-   border-top: 1px solid #a799eb;
-   padding: 7.5px 15px;
-   border-radius: 8px;
-   background-color: rgb(41, 119, 244);
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 13px;
-   font-family: Georgia, serif;
-   text-decoration: none;
-   vertical-align: middle;
-   }
-.button:hover {
-   border-top-color: #9f9fa1;
-   background: rgba(41, 119, 244, 0.6);
-   }
-.button:active {
-   border-top-color: #0eb026;
-   background: #0eb026;
-   }
+
 
     div .btn {
    border-top: 1px solid #a799eb;
    background: rgb(41, 119, 244);
    padding: 7.5px 15px;
    border-radius: 8px;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: rgb(255, 255, 255);
    font-size: 13px;
    font-family: Georgia, serif;
