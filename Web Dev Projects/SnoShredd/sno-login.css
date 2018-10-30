@@ -1,5 +1,5 @@
 body {
-  background-image: url('snowysunset.jpg');
+  /* background-image: url('snowysunset.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -21,8 +21,8 @@ html {
 
 
 .container-form {
-	width: 45%;
-	height: 500px;
+	width: 80%;
+	height: 150px;
 	text-align: center;
   background-color: rgba(255, 255, 255, 1);
   background-attachment: fixed;
@@ -32,7 +32,7 @@ html {
 	margin-top: 8%;
 }
 
-.usr {
+.form-control {
   margin-bottom: 15px;
   margin-top: 60px;
   align-content: center;
@@ -61,47 +61,60 @@ form #logo {
 
 .container-form input {
 	height: 40px; 
-	width: 60%;
+	width: 80%;
 	font-size: 17px;
 	margin-bottom: 20px;
 	background-color: #fff;
   padding-left: 15px;
   border-radius: 8px;
-  size: fixed;
 }
 
-.container-form input: :hover {
+.container-form input:hover {
     border: #fff;
-    background: #42b8f7;
+    
 }
 
-.container-form input[type="text"],input[type="password"] {
-  width:300px;
+.container-form input[type="password"]{
+  width: 100%;
   height:40px;
   padding-left:10px;
-  margin-top:10px;
+  margin-top: 0px;
+  font-size: 17px;
+  border:1px solid #D8D8D8;
+}
+
+.container-form input[type="text"] {
+  width:100%;
+  height:40px;
+  padding-left:10px;
+  margin-top: 0px;
+  font-size: 17px;
   border:1px solid #D8D8D8;
 
 }
 
+div .input-group {
+  height: 0%;
+}
 
-.form-input i {
-   padding-right: 8px;
-   font-size: 15px;
-   color: rgba(0, 0, 0, 0.9);
+.input-group-addon i {
+   
+   font-size: 20px;
+   color: rgb(0, 0, 0);
 
 }
 
+#login {
+  margin-top: 20px;
+}
 
-
-
-    div .btn {
+div .btn {
    border-top: 1px solid #a799eb;
    background: rgb(41, 119, 244);
    padding: 7.5px 15px;
    border-radius: 8px;
    color: rgb(255, 255, 255);
-   font-size: 13px;
+   font-size: 17px;
    font-family: Georgia, serif;
    text-decoration: none;
    vertical-align: middle;
@@ -123,13 +136,11 @@ form #logo {
      color: #fff;
    }
 
-  
-
-
 .forgotpass {
   color: rgb(26, 11, 161);
   padding-right: 50px;
   font-family: 'Lato', sans-serif;
+  font-size: 17px;
   text-overflow: ellipsis; 
   overflow: hidden;
   white-space: nowrap;
@@ -137,6 +148,7 @@ form #logo {
  }
 
  .forgotuser {
+   font-size: 17px;
    color: rgb(26, 11, 161);
    font-family: 'Lato', sans-serif;
   text-overflow: ellipsis; 
@@ -149,18 +161,3 @@ form #logo {
    font-family: 'Lato', sans-serif;
    color: rgba(56, 55, 55, 0.5);
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 

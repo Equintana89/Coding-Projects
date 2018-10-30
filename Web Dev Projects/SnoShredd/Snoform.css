@@ -18,12 +18,14 @@ div h3 {
   color: aliceblue;
 }
 
+
+
 .container form {
   padding-top: 20px;
-  width: 75%; 
+  width: 100%; 
 	
 	text-align: center;
-	background-color: rgba(12, 152, 183, 1);
+	
 	border-radius: 4px;
 	margin:  auto;
   margin-top: 5%;
