@@ -1,113 +1,26 @@
-body {
-  background-image: url('whitebrick.jpg');
-}
 
-body,
-html {
+
+#btn {
+  border-top: 1px solid #a799eb;
+   background: rgb(41, 119, 244);
+   padding-left: 10%;
+   padding-right: 10%;
+   border-radius: 8px;
+   color: rgb(252, 252, 253);
+   font-size: 17px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   width: 80%;
+  margin-bottom: 30px;
   
-  font-family: 'Merriweather Sans', 'Fira Sans Condensed', 'Port Lligat Sans', sans-serif;
-  color: white; 
-  font: normal;    
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
 }
 
-div h3 {
-  color: aliceblue;
+form  {
+  margin: 30px auto 30px;
+  width: 50%;
+  text-decoration: none;
 }
 
-
-
-.container form {
-  padding-top: 20px;
-  width: 100%; 
-	
-	text-align: center;
-	
-	border-radius: 4px;
-	margin:  auto;
-  margin-top: 5%;
-  margin-bottom: 35px;
-  border-radius: 15px;
-}
-
-label {
-  color: rgb(240, 248, 255);
-  font-weight: bolder;
-}
-
-form {
-  padding-top: 20px;
-}
-
-#logo {
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 8px;
-  
-  color: rgb(240, 248, 255);
-  font-size: 40px;
-  font-weight: bolder;
-} 
-
-input[type=email],
-input[type=password] {
- -webkit-appearance: none;
-  width: 100%;
-  border: 1px #333;
-  margin: 0;
-  font-family: inherit;
-  font-size: 90%;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-
-hr {
-  width: 95%;
-
-}
-
-#skill, #boardBrand, #age, #style, #mtn {
-  width: 70%;
-  height: 25px;
-  margin-left: 5%;
-  margin-bottom: 5%;
-  border-radius: 15px;
-  border-color: aliceblue;
-  outline: none;
-  font-size: 13px;
-  font-weight: bold;
-  align-items: center;
-}
-
-#malefemale {
-  width: 17%;
-  border-radius: 15px;
-  height: 25px;
-  outline: none;
-  font-weight: bold;
-  font-size: 13px;
-  text-align: center;
-}
-
-
-
-div .form-check {
-  margin: 5%;
-  margin-bottom: 3%;
-}
-
-input{
-  padding-left: 15px;
-}
-
-select {
-  padding-left: 10px;
-}
-
-.btn {
-  margin-bottom: 6%;
-}

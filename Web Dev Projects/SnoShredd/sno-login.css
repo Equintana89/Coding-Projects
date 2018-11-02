@@ -1,9 +1,4 @@
 body {
-  /* background-image: url('snowysunset.jpg'); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
   
   width: 20%;
   height: 120px;
@@ -14,14 +9,14 @@ body,
 html {
     width: 100%;
     height: 100%;
-    font-family: 'Lato', sans-serif;
+    font-family: lato;
     color: white; 
 }
 
 
 
 .container-form {
-	width: 80%;
+	width: 40%;
 	height: 150px;
 	text-align: center;
   background-color: rgba(255, 255, 255, 1);
@@ -131,13 +126,13 @@ div .btn {
    }
 
    div .btn:active {
-     border-top: #0eb026;
-     background: #0eb026;
+     border-top: #8c80ff;;
+     background: #8c80ff;;
      color: #fff;
    }
 
 .forgotpass {
-  color: rgb(26, 11, 161);
+  color: rgb(88, 84, 128);
   padding-right: 50px;
   font-family: 'Lato', sans-serif;
   font-size: 17px;
@@ -149,7 +144,7 @@ div .btn {
 
  .forgotuser {
    font-size: 17px;
-   color: rgb(26, 11, 161);
+   color: rgb(88, 84, 128);
    font-family: 'Lato', sans-serif;
   text-overflow: ellipsis; 
   overflow: hidden;

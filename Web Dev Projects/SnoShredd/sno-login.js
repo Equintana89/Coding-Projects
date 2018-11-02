@@ -8,7 +8,7 @@ function validate(){
       var password = document.getElementById('password').value;
 
       if(username === 'Equintana' && password === 'Snow1234') {
-            alert('Login succesfully');
+            // alert('Login succesfully');
             window.location = "login-page.html"; // Redirecting to other page
       } else {
             // attempt --; //Decrementing by one

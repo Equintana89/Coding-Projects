@@ -3,52 +3,136 @@
 <head>
 	<title>Snoform</title>
 	<link rel="stylesheet" type="text/css" href="Snoform.css">
-	<link rel="stylesheet" type="text/css"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Merriweather+Sans|Port+Lligat+Sans" rel="stylesheet">
 </head>
 
 <body>  
-    <nav class="navbar navbar-default">
-        <div class="container">
-    
-        
-          <div class="navbar-header"> 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
-           
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-      
-                
-            <a class="navbar-brand" href="index.html"><i class="fab fa-empire"></i> SnoShredd</a>
-      
-          </div>
-              
-          <!--This div is needed to have drop down button to show and hide. Id needs to match with data target-->
+  <nav class="navbar navbar-default">
+		<div class="container">
 
-          <div>
-            <div class="collapse navbar-collapse" id="bs-nav-demo">  
-              <ul class="nav navbar-nav">
-                <li><a href="about.html">About</a></li>
-                <li><a href="">Contact</a></li>
-              </ul>
-      
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="index-form.html"><i class="fas fa-user-plus"></i> Sign Up</a></li>
-              </ul>
-            </div>
-          </div>
-      </nav>
+			<!--This div is used to hide content inside button-->
+				<div class="navbar-header"> 
+					 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+				      <!--These span classes make the 3 bars on the drop down menu button-->  
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+		      		</button>
+
+		      		
+				 <a class="navbar-brand" href="index.html"><i class="fab fa-empire"></i> SnoShredd</a>
+
+				</div>
+				
+				<!--This div is needed to have drop down button to show and hide. Id needs to match with data target-->
+				<div>
+					<div class="collapse navbar-collapse" id="bs-nav-demo">  
+						<ul class="nav navbar-nav">
+							<li><a href="about.html">About</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="index-login.html"><i class="fas fa-user"></i> Log In</a></li>
+						</ul>
+					</div>
+
+				</div>
+	</nav>
 
 <div class="container">
-  <form>
-    <div class="title">
-      <a href="index.html"><i class="fab fa-empire" id="logo"> SnoShredd</i></a>
-    </div>
+    <form>
+        <div class="form-group">
+          <label for="">Frst Name</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ex. John">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Last Name</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ex. Smith">
+        </div>
+        <div class="form-group">
+            <label for="">Email Address</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="someone@gmail.com">
+          </div>
+          <div class="form-group">
+            <label for="hometown"></label>Hometown
+            <input type="text" class="form-control" id="hometown" placeholder="">
+          </div>
+          <br>
+          
+      </form>
+      <hr>
 
+      <h3>Now let's talk about your other life...</h3>
+      <form class="form-group">
+          <select class="form-control">
+              <option class="default">Select skill level</option>
+                <option value="Beg">Beginner</option>
+                <option value="Inter">Intermediate</option>
+                <option value="Adv">Advanced</option>
+                <option value="semi">Semi Pro</option>
+                <option value="Pro">Pro</option>
+          </select>
+          <br>
+          <select class="form-control">
+              <option class="default">Select style of riding</option>
+                  <option value="">Freestyle park</option>
+                  <option value="">Freestyle backcountry</option>
+                  <option value="">Freeriding</option>
+                  <option value="">Heli boarding</option>
+                  <option value="">Other</option>
+          </select>
+          <br>
+          <select class="form-control">
+              <option class="default">Select snowboard brand</option>
+                <option value="">Atomic</option>
+                <option value="">Burton</option>
+                <option value="">Capita</option>
+                <option value="">DC Shoes</option>
+                <option value="">Flow</option>
+                <option value="">GNU</option>
+                <option value="">HEAD</option>
+                <option value="">Jones</option>
+                <option value="">K2</option>
+                <option value="">LaMar</option>
+                <option value="">Lib Tech</option>
+                <option value="">Never Summer</option>
+                <option value="">Niche</option>
+                <option value="">Nitro</option>
+                <option value="">Ride</option>
+                <option value="">Rome</option>
+                <option value="">Rossignol</option>
+                <option value="">Roxy</option>
+                <option value="">Salomon</option>
+                <option value="">Santa Cruz</option>
+                <option value="">Stepchild</option>
+                <option value="">Technine</option>
+                <option value="">Other</option>
+          </select>
+          <br>
+          <select class="form-control">
+              <option class="default">Select age group</option>
+              <option value="">5-8</option>
+              <option value="">9-11</option>
+              <option value="">12-14</option>
+              <option value="">15-18</option>
+              <option value="">19+</option>
+          </select>
+          <br>
+          <select class="form-control">
+              <option>Select gender</option>
+              <option>Male</option>
+              <option>Female</option>
+          </select>
+          <br>
+        
+        <div>
+          <input type="submit" class="btn btn-primary col-md-12" id="btn">
+        </div>  
+      </form>
+  <!-- <form>
     <div>
       <h3>Have we not met? Tell me a little bit about yourself :</h3>
     </div>
@@ -232,7 +316,7 @@
             <input type="text" id="mtn" placeholder="Preferred mountain to ride">
         </div>
 
-         <div class="">
+         <div class="col-md-6">
               <select id="malefemale">
                   <option>Select gender</option>
                   <option>Male</option>
@@ -244,9 +328,11 @@
 
             
     <div class="form-check" id="subscribe">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">Please add me to your email list so I can recieve promotions</label>
-      </div> 
+        <label class="form-check-label" for="gridCheck">
+            <input class="form-check-input" type="checkbox" id="gridCheck" value="">
+            Subscribe to newsletter
+        </label>
+    </div> 
  
     
 
@@ -255,7 +341,7 @@
     </div>
       
 
-</form>
+</form> -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
