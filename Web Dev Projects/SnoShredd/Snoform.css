@@ -1,3 +1,10 @@
+body {
+  background-image: url('snowyview.jpg');
+  color: white;
+  background-attachment: fixed;
+  background-repeat: inherit;
+  
+}
 
 
 #btn {
@@ -10,10 +17,9 @@
    font-size: 17px;
    font-family: Georgia, serif;
    text-decoration: none;
-   vertical-align: middle;
    text-overflow: ellipsis;
    overflow: hidden;
-   width: 80%;
+   width: 100%;
   margin-bottom: 30px;
   
 }
@@ -22,5 +28,47 @@ form  {
   margin: 30px auto 30px;
   width: 50%;
   text-decoration: none;
+}
+
+.form-control {
+  margin: 0px auto;
+}
+
+#firstName, #lastName, #inputEmail, #hometown {
+  border-radius: 7px;
+  padding-bottom: 0px;
+}
+
+.container-form {
+  background-color: rgba(122, 190, 209, 0.7);
+  width: 45%;
+  height: 800px;
+  text-align: left;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+label {
+  margin: 8px auto;
+  padding-top: 10px;
+  display: inline;
+}
+
+#text2 {
+  font-family: georgia, serif;
+  color: white;
+  text-align: center;
+}
+
+#text {
+  font-family: georgia, serif;
+  color: white;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 0px;
+}
+
+hr {
+  width: 500px;
 }
 

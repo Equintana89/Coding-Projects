@@ -9,7 +9,7 @@
 </head>
 
 <body>  
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default" id="nav">
 		<div class="container">
 
 			<!--This div is used to hide content inside button-->
@@ -42,31 +42,32 @@
 				</div>
 	</nav>
 
-<div class="container">
+<div class="container-form">
     <form>
+      <div>
+          <h2 id="text">SnoShredd Form</h2>
+          <h4 id="text2">Please fill out the form below...</h4>
+      </div>
         <div class="form-group">
-          <label for="">Frst Name</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ex. John">
+          <input type="text" class="form-control" id="firstName" placeholder="Frst Name" required>
         </div>
         <div class="form-group">
-          <label for="formGroupExampleInput2">Last Name</label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ex. Smith">
+          <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
         </div>
         <div class="form-group">
-            <label for="">Email Address</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="someone@gmail.com">
+            <input type="text" class="form-control" id="inputEmail" placeholder="Email" required>
           </div>
           <div class="form-group">
-            <label for="hometown"></label>Hometown
-            <input type="text" class="form-control" id="hometown" placeholder="">
+            <input type="text" class="form-control" id="hometown" placeholder="Hometown Ex. Salt Lake City, UT, USA">
           </div>
           <br>
           
       </form>
       <hr>
 
-      <h3>Now let's talk about your other life...</h3>
-      <form class="form-group">
+      
+      <form class="form-group" id="select">
+          <h3 id="text">Now let's talk about your other life...</h3>
           <select class="form-control">
               <option class="default">Select skill level</option>
                 <option value="Beg">Beginner</option>

@@ -1,7 +1,9 @@
-body {
+body { 
+  background-image: url('bluetexture.jpg');
+  background-repeat: no-repeat;
+  background-position: relative;
+  background-size: cover;
   
-  width: 20%;
-  height: 120px;
 
 }
 
@@ -13,18 +15,21 @@ html {
     color: white; 
 }
 
+#memberLogIn {
+  padding-bottom: 30px;
+}
+
 
 
 .container-form {
-	width: 40%;
-	height: 150px;
+  width: 30%;
+  height: 100%;
 	text-align: center;
-  background-color: rgba(255, 255, 255, 1);
   background-attachment: fixed;
   background-position: center center;
 	border-radius: 25px;
 	margin: 0 auto;
-	margin-top: 8%;
+	margin-top: 100px;
 }
 
 .form-control {
@@ -105,7 +110,7 @@ div .input-group {
 
 div .btn {
    border-top: 1px solid #a799eb;
-   background: rgb(41, 119, 244);
+   background: rgb(43, 74, 124);
    padding: 7.5px 15px;
    border-radius: 8px;
    color: rgb(255, 255, 255);
@@ -121,7 +126,7 @@ div .btn {
 
    div .btn:hover {
      border-top: #9f9fa1;
-     background: rgba(41, 119, 244, 0.6);
+     background: rgba(43, 74, 124, 0.9);
      color: #fff;
    }
 
@@ -132,10 +137,10 @@ div .btn {
    }
 
 .forgotpass {
-  color: rgb(88, 84, 128);
+  color: rgba(19, 19, 20, 0.9);
   padding-right: 50px;
   font-family: 'Lato', sans-serif;
-  font-size: 17px;
+  font-size: 14px;
   text-overflow: ellipsis; 
   overflow: hidden;
   white-space: nowrap;
@@ -143,8 +148,8 @@ div .btn {
  }
 
  .forgotuser {
-   font-size: 17px;
-   color: rgb(88, 84, 128);
+   font-size: 14px;
+   color: rgba(19, 19, 20, 0.9);
    font-family: 'Lato', sans-serif;
   text-overflow: ellipsis; 
   overflow: hidden;
@@ -154,5 +159,5 @@ div .btn {
 
  div h5 {
    font-family: 'Lato', sans-serif;
-   color: rgba(56, 55, 55, 0.5);
+   color: rgba(56, 55, 55, 0.8);
  }
