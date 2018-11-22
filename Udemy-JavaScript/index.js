@@ -292,30 +292,33 @@ for(var i = 1; i <= 5; i++){
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 //CODING CHALLENGE 2
 
-function printFullAge(birthYear){
-	var ages = [];
-	var fullAges = [];
+// function printFullAge(birthYear){
+// 	var ages = [];
+// 	var fullAges = [];
 
-	for(var i = 0; i < birthYear.length; i++){
-	ages[i] = 2016 - birthYear[i];
-}
+// 	for(var i = 0; i < birthYear.length; i++){
+// 	ages[i] = 2016 - birthYear[i];
+// }
 
-for(i = 0; i < ages.length; i++){
-	if(ages[i] >= 18){
-		console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' years old and of full age.')
-		fullAges.push(true);
-	} else {
-		console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' years old and is not of full age.');
-		fullAges.push(false);
-	}
-}
+// for(i = 0; i < ages.length; i++){
+// 	if(ages[i] >= 18){
+// 		console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' years old and of full age.')
+// 		fullAges.push(true);
+// 	} else {
+// 		console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' years old and is not of full age.');
+// 		fullAges.push(false);
+// 	}
+// }
 
-return fullAges;
+// return fullAges;
 
-}
+// }
 
 
-var birthYear = [1989, 1992, 2011, 1998];
-var full_1 = printFullAge(birthYear);
-var full_2 = printFullAge([2012, 1915, 1999]);
+// var birthYear = [1989, 1992, 2011, 1998];
+// var full_1 = printFullAge(birthYear);
+// var full_2 = printFullAge([2012, 1915, 1999]);
+
+
+
 
