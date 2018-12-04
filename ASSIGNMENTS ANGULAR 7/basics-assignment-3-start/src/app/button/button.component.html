@@ -1,0 +1,10 @@
+<div class="container">
+  <button class="btn btn-primary" (click)="toggleDetails(); onClick()">{{ btnText }}</button>
+  <p>{{ showDetails }} </p>
+</div>
+
+<div *ngFor="let log of logs">
+  <p>{{ log }}</p>
+</div>
+
+<!-- <app-array *ngFor="let log of log"></app-array> -->
