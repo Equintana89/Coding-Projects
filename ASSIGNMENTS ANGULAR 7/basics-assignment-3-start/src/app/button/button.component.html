@@ -1,10 +1,18 @@
 <div class="container">
-  <button class="btn btn-primary" (click)="toggleDetails(); onClick()">{{ btnText }}</button>
-  <p>{{ showDetails }} </p>
+  <!-- MAX'S WAY -->
+<!-- <button class="btn btn-primary" (click)= "showSecret = !showSecret">Display Details</button> -->
+<button class="btn btn-primary" (click)= "onToggleDetails()">Display Details</button>
+<p *ngIf="showSecret">Secret Password: Quintana</p>
+<div *ngFor="let logItem of log; let i = index" [ngStyle]="{backgroundColor: i >= 4 ?'blue' : 'transparent'}" [ngClass]="{'white-text' : i >= 4}" >{{ logItem }}</div>
+
+
+  <!-- MY WAY -->
+  
+  <!-- <button class="btn btn-primary" (click)="toggleDetails(); onClick()">{{ btnText }}</button> -->
+
+  <!-- <p>{{ showDetails }} </p> -->
 </div>
 
-<div *ngFor="let log of logs">
-  <p>{{ log }}</p>
-</div>
-
-<!-- <app-array *ngFor="let log of log"></app-array> -->
+<!-- <div *ngFor="let log of logs">
+  <p [ngStyle]="{backgroundColor: getColor()}">{{ log }}</p>
+</div> -->
