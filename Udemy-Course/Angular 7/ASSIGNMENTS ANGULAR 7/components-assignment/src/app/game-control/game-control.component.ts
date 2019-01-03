@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameControlComponent implements OnInit {
   number = 0;
+  counter;
 
   constructor() { }
 
@@ -14,14 +15,17 @@ export class GameControlComponent implements OnInit {
   }
 
   gameStart() {
-    
-    setInterval(()=> {
+     this.counter = setInterval(()=> {
       this.number++;
     }, 1000);
+        
   }
 
   gameStop() {
-
+    clearInterval(this.counter);
+    this.number = 0;
+    
+    
   }
 
 }
