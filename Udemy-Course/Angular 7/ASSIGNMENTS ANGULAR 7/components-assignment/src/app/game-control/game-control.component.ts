@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameControlComponent implements OnInit {
   number = 0;
+  hidden = true;
   counter;
+  evenNumber = 'NUMBER - Even';
 
   constructor() { }
 
@@ -18,14 +20,18 @@ export class GameControlComponent implements OnInit {
      this.counter = setInterval(()=> {
       this.number++;
     }, 1000);
-        
+
+    if(this.number !% 2) {
+      this.evenNumber;
+    }
+          
   }
 
   gameStop() {
     clearInterval(this.counter);
-    this.number = 0;
-    
-    
+    this.number = 0; 
   }
+
+
 
 }
