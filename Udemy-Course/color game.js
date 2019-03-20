@@ -18,7 +18,7 @@ function init(){
 
 	function setupModeButtons(){
 	  for(var i = 0; i < modeButtons.length; i++){
-	modeButtons[i].addEventListener("click" function(){
+	modeButtons[i].addEventListener("click", function(){
 		modeButtons[0].classList.remove("selected");
 		modeButtons[1].classList.remove("selected");
 		this.classList.add("selected");
@@ -62,7 +62,7 @@ function reset(){
 	//change colors of squares
 	for(var i = 0; i < squares.length; i++){
 		if(colors[i]){
-			squares[i].style.backgroundColor = color[i];
+			squares[i].style.backgroundColor = colors[i];
 		} else {
 			squares[i].style.display = "none";
 		}
