@@ -1,13 +1,9 @@
 body{
-	background-image: url(bluesnowboard.jpg);
-	background-size: cover;
-	
-
+	background: left 5% / 100% 65% no-repeat url(images/bluesnowboard.jpg);
+	overflow-x: hidden;
 }
 
-body,
-html {
-    width: 100%;
+.container{
     height: 100%;
     font-family: lato;
     color: white; 
@@ -26,4 +22,41 @@ ul {
 
 #btn {
 	outline: none;
+}
+
+
+.card-img-top{
+	height: 50%;
+	width: 100%;
+}
+
+.card{
+	height: 20%;
+	width: 85%;
+	background: #ffffff;
+	margin: 0;
+	margin-top: 15%;
+}
+
+.card-left{
+	margin-left: 15%;
+}
+
+.card-right{
+	margin-right: 10%;
+}
+
+.card-middle{
+	margin-left: 8%;
+}
+
+.cards-row{
+	font-size: 1em;
+	margin-top: 23%;
+	background: rgba(17, 92, 253, 0.5);
+}
+
+.card-body{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva;
+	align-content: center;
 }

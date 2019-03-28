@@ -1,11 +1,9 @@
 body {
-  background-image: url('snowyview.jpg');
-  color: white;
+  color: #525758;
   background-attachment: fixed;
   background-repeat: inherit;
   
 }
-
 
 #btn {
   border-top: 1px solid #a799eb;
@@ -31,18 +29,19 @@ form  {
 }
 
 .form-control {
-  margin: 0px auto;
+  margin-bottom: 3em;
 }
 
 #firstName, #lastName, #inputEmail, #hometown {
   border-radius: 7px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
+  height: 4em;
 }
 
 .container-form {
-  background-color: rgba(122, 190, 209, 0.7);
-  width: 45%;
-  height: 800px;
+  background-color: #525758;
+  width: 50%;
+  height: 35em;
   text-align: left;
   margin: 0 auto;
   border-radius: 10px;
