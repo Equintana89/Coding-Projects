@@ -1,5 +1,5 @@
 body{
-	background: left 5% / 100% 65% no-repeat url(images/bluesnowboard.jpg);
+	background: left 5% / 100% 45% no-repeat url(images/bluesnowboard.jpg);
 	overflow-x: hidden;
 }
 
@@ -52,11 +52,27 @@ ul {
 
 .cards-row{
 	font-size: 1em;
-	margin-top: 23%;
+	margin-top: 21.3em;
+	padding-bottom: 15%;
 	background: rgba(17, 92, 253, 0.5);
 }
 
 .card-body{
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva;
 	align-content: center;
+}
+
+.mission-statement{
+	background: left 5%/ 100% 100% no-repeat url();
+	background-size: cover;
+	font-size: 1.5em;
+	color: #1a1818;
+	text-align: center;
+	padding: 2em 2em;
+}
+
+.statement {
+	width: 70%;
+	text-align: center;
+	margin-left: 8em;
 }
