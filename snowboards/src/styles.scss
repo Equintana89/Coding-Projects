@@ -16,7 +16,8 @@ $Buy-btn: #efefef82;
 $text-font: Arial, verdana, sans-serif;
 $headline-font: "Palatino Linotype", Georgia, serif;
 //SIZES
-
+$header-links: 12px;
+$small: 10px;
 //PADDING AND MARGINS
 
 $types: margin, padding;
@@ -24,10 +25,10 @@ $types: margin, padding;
 $positions: left, right, bottom, top;
 
 @each $type in $types {
-  @each $position in positions {
+  @each $position in $positions {
     @for $i from 0 through 12 {
       .#{$type}-#{$position}-#{$i} {
-        #{$type}-#{$position}: #{$i/3}em !important;;
+        #{$type}-#{$position}: #{$i/3}em !important;
       }
     }
   }
@@ -37,28 +38,30 @@ $positions: left, right, bottom, top;
   @for $i from 0 through 12 {
     .#{$type}-horizontal-#{$i} {
       #{$type}-left: #{$i/3}em !important;
-      #{$type}-right: #{$i/3}em !important;;
+      #{$type}-right: #{$i/3}em !important;
     }
     .#{$type}-vertical-#{$i} {
-      #{$type}-top: #{$i/3}em !important;;
-      #{$type}-bottom: #{$i/3}em !important;;
+      #{$type}-top: #{$i/3}em !important;
+      #{$type}-bottom: #{$i/3}em !important;
     }
     .#{$type}-#{$i} {
-      #{$type}: #{$i/3}em !important;;
+      #{$type}: #{$i/3}em !important;
     }
   }
 }
 
-.header-container {
+.wrapper {
   background: $bg-color;
 }
 
 .gold-text {
   color: $icon-links;
+  font-size: $header-links;
 }
 
 .white-text {
   color: $menu-items;
+  font-size: $small;
 }
 
 ul li {
@@ -67,4 +70,8 @@ ul li {
 
 .social-media {
   float: right;
+}
+
+a:hover {
+  color: $icon-links;
 }

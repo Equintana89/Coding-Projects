@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Snowboards';
-  phone = '801-867-5653'
+  phone = '801.867.5653';
+  email = 'info@nichesnowboards.com';
 }
 
 
