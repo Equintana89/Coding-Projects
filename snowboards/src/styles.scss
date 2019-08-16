@@ -1,1 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
+@import "styles/buttons.scss";
+@import "styles/colors.scss";
+@import "styles/forms.scss";
+@import "styles/helper-styles.scss";
+@import "styles/typography.scss";
+
+//COLORS
+$bg-color: #212121;
+$icon-links: #8a7d5c;
+$bg-dropdown: #333333;
+$menu-items: #ffff;
+$title-para: #8a7d5b;
+$Buy-btn: #efefef82;
+
+//FONTS
+$text-font: Arial, verdana, sans-serif;
+$headline-font: "Palatino Linotype", Georgia, serif;
+//SIZES
+
+//PADDING AND MARGINS
+
+$types: margin, padding;
+
+$positions: left, right, bottom, top;
+
+@each $type in $types {
+  @each $position in positions {
+    @for $i from 0 through 12 {
+      .#{$type}-#{$position}-#{$i} {
+        #{$type}-#{$position}: #{$i/3}em !important;;
+      }
+    }
+  }
+}
+
+@each $type in $types {
+  @for $i from 0 through 12 {
+    .#{$type}-horizontal-#{$i} {
+      #{$type}-left: #{$i/3}em !important;
+      #{$type}-right: #{$i/3}em !important;;
+    }
+    .#{$type}-vertical-#{$i} {
+      #{$type}-top: #{$i/3}em !important;;
+      #{$type}-bottom: #{$i/3}em !important;;
+    }
+    .#{$type}-#{$i} {
+      #{$type}: #{$i/3}em !important;;
+    }
+  }
+}
+
+.header-container {
+  background: $bg-color;
+}
+
+.gold-text {
+  color: $icon-links;
+}
+
+.white-text {
+  color: $menu-items;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.social-media {
+  float: right;
+}
