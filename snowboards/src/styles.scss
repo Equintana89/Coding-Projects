@@ -26,16 +26,16 @@ $positions: left, right, bottom, top;
 
 @each $type in $types {
   @each $position in $positions {
-    @for $i from 0 through 12 {
+    @for $i from 0 through 48 {
       .#{$type}-#{$position}-#{$i} {
-        #{$type}-#{$position}: #{$i/3}em !important;
+        #{$type}-#{$position}: #{$i/1}em !important;
       }
     }
   }
 }
 
 @each $type in $types {
-  @for $i from 0 through 12 {
+  @for $i from 0 through 48 {
     .#{$type}-horizontal-#{$i} {
       #{$type}-left: #{$i/3}em !important;
       #{$type}-right: #{$i/3}em !important;
@@ -50,19 +50,42 @@ $positions: left, right, bottom, top;
   }
 }
 
-.wrapper {
+.snow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
   background: $bg-color;
+  border-bottom: solid #8a7d5c;
 }
 
-.gold-text {
+.snow-row {
+  font-size: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.snow-header{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.gold-text{
   color: $icon-links;
-  font-size: $header-links;
+  font-size: $small;
 }
 
 .white-text {
   color: $menu-items;
-  font-size: $small;
+  font-size: 9px;
 }
+
+
 
 ul li {
   list-style-type: none;
@@ -72,6 +95,24 @@ ul li {
   float: right;
 }
 
+a {
+  font-size: $small;
+}
+
 a:hover {
   color: $icon-links;
 }
+
+.logo {
+  width: 130px;
+  height: 130px;
+  background: $bg-color;
+  border-radius: 50%;
+  border: solid $menu-items;
+  color: $menu-items;
+  z-index: 1;
+  h6 {
+    font-size: .5rem;
+  }
+}
+
