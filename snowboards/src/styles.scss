@@ -75,6 +75,11 @@ $positions: left, right, bottom, top;
   width: 100%;
 }
 
+.snow-header2 {
+  background: $bg-color;
+  height: 95px;
+}
+
 .gold-text{
   color: $icon-links;
   font-size: $small;
@@ -91,6 +96,8 @@ ul li {
   list-style-type: none;
 }
 
+
+
 .social-media {
   float: right;
 }
@@ -104,6 +111,7 @@ a:hover {
 }
 
 .logo {
+  position: absolute;
   width: 130px;
   height: 130px;
   background: $bg-color;
@@ -113,6 +121,19 @@ a:hover {
   z-index: 1;
   h6 {
     font-size: .5rem;
+  }
+}
+
+.flex-header {
+  display: flex;
+  justify-content: flex-end
+}
+
+.header-menu {
+  display: flex;
+  li {
+    font-size: initial;
+    padding: 0 40px
   }
 }
 
