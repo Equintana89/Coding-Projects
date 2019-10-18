@@ -18,6 +18,7 @@ $headline-font: "Palatino Linotype", Georgia, serif;
 //SIZES
 $header-links: 12px;
 $small: 10px;
+$large-text: 30px;
 //PADDING AND MARGINS
 
 $types: margin, padding;
@@ -56,7 +57,7 @@ $positions: left, right, bottom, top;
   align-items: center;
   height: 40px;
   background: $bg-color;
-  border-bottom: solid #8a7d5c;
+  border-bottom: solid rgba(138, 125, 92, 0.2);
 }
 
 .snow-row {
@@ -80,9 +81,20 @@ $positions: left, right, bottom, top;
   height: 95px;
 }
 
+.is-normal {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
 .gold-text{
   color: $icon-links;
   font-size: $small;
+}
+
+.gold-text-large {
+  color: $icon-links;
+  font-size: $large-text;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .white-text {
@@ -90,7 +102,14 @@ $positions: left, right, bottom, top;
   font-size: 9px;
 }
 
+.lighter-text{
+  color: #f7f1f1cb;
+  font-size: 10px;
+}
 
+.pointer {
+  cursor: pointer;
+}
 
 ul li {
   list-style-type: none;
