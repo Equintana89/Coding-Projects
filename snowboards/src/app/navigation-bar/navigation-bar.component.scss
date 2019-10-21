@@ -1,0 +1,54 @@
+@import "../../styles.scss";
+
+nav {
+    height: 95px;
+}
+
+ul {
+    padding: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    &:hover {
+        background-color: #333333;
+        transition: 1s;
+    }
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 249px;
+    z-index: 1;
+    background-color: #333333;
+    padding: 0;
+}
+
+.menu-item {
+    padding: 1em 1.5em;
+    font-size: 13px;
+    &:hover {
+        font-style: italic;
+        background-color: $title-para;
+    }
+}
+
+.dropdown:hover .dropdown-content {
+    transition: 2s;
+    display: block;
+    background-color: #333333;
+    margin-top: 1.6em;
+}
+
+.dropdown-title {
+    padding-left: 1.5em;
+    &:hover {
+        background-color: #333333;
+        font-style: italic;
+        transition: 1s;
+    }
+    
+}

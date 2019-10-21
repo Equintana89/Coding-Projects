@@ -123,11 +123,12 @@ ul li {
 
 a {
   font-size: $small;
+
+  &:hover{
+    color: $icon-links; 
+  }
 }
 
-a:hover {
-  color: $icon-links;
-}
 
 .logo {
   position: absolute;
@@ -152,7 +153,7 @@ a:hover {
   display: flex;
   li {
     font-size: initial;
-    padding: 0 40px
+    padding: 0 40px;
   }
 }
 
