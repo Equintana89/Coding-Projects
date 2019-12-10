@@ -13,7 +13,7 @@ ul {
     display: inline-block;
     &:hover {
         background-color: #333333;
-        transition: 1s;
+        // transition: 1s;
     }
 }
 
@@ -28,8 +28,19 @@ ul {
 }
 
 .menu-item {
+    width: 100%;
     padding: 1em 1.5em;
     font-size: 13px;
+    &:hover {
+        font-style: italic;
+        background-color: $title-para;
+    }
+}
+
+.sust-tech{
+    font-size: 12px;
+    width: 100%;
+    padding: 1em 1.5em;
     &:hover {
         font-style: italic;
         background-color: $title-para;
@@ -48,7 +59,7 @@ ul {
     &:hover {
         background-color: #333333;
         font-style: italic;
-        transition: 1s;
+        // transition: 1s;
     }
     
 }
