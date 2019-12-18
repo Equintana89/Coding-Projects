@@ -1,0 +1,36 @@
+$justify-positions: center, /* Pack items around the center */
+start, /* Pack items from the start */
+end, /* Pack items from the end */
+flex-start, /* Pack flex items from the start */
+flex-end, /* Pack flex items from the end */
+left, /* Pack items from the left */
+right, /* Pack items from the right */
+
+  /* Baseline alignment */
+  /* justify-content does not take baseline values */
+
+  /* Normal alignment */
+normal,
+  /* Distributed alignment */
+space-between, /* Distribute items evenly
+                                   The first item is flush with the start,
+                                   the last is flush with the end */
+space-around, /* Distribute items evenly
+                                   Items have a half-size space
+                                   on either end */
+space-evenly, /* Distribute items evenly
+                                   Items have equal space around them */
+stretch/* Distribute items evenly
+                                   Stretch 'auto'-sized items to fit
+                                   the container */
+;
+
+
+@each $position in $justify-positions {
+  .justify-#{$position} {
+    justify-content: $position;
+  }
+  .justify-self-#{$position} {
+    justify-self: $position;
+  }
+}

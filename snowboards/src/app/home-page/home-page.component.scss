@@ -1,40 +1,148 @@
+.carousel-item {
+  background-image: linear-gradient(black, white);
+  margin-top: 0.15em;
+}
+
 .image {
-    width: 100%;
-    position: absolute;
-  }
+  width: 100%;
+  position: absolute;
+}
 
- .big-text {
-     position: relative;
-     width: 50%;
-     float: right;
+.big-text {
+  position: relative;
+  width: 50%;
+  float: right;
+}
 
- }
+.good-wood {
+  position: absolute;
+  width: 10%;
+}
 
- .good-wood{
-     position: absolute;
-     width: 10%;
- }
-
- .snow-row{
-     width: 100%    ;
- }
-
+.snow-row {
+  width: 100%;
+}
 
 .award-icon {
-    width: 20%;
+  width: 20%;
 }
 
 .carousel {
-    padding-top: 37em;
-    padding-bottom: 5em;
+  padding-top: 37em;
+  // padding-bottom: 5em;
 }
 
 .d-block {
-    margin: 0 7em;
-    height: 10%;
-    width: 10%;
+  margin: 0 5em;
+  height: 15%;
+  width: 15%;
 }
 
-mdb-carousel-item {
-    padding-left: 15%;
+.d-block > img {
+  width: 100%;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+  }
 }
+
+button {
+  margin: 0;
+}
+
+.buy-now-btn {
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: capitalize;
+  border: solid #000000;
+  font: {
+    family: "Roboto", sans-serif;
+    size: 18px;
+  }
+  margin-left: 12px;
+  padding: 20px 0px;
+  width: 180px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.buy-now-btn.btn-effect {
+  transition: all 0.2s linear 0s;
+
+  &::before {
+    content: "\f061";
+    font-family: FontAwesome;
+    font-size: 15px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 40px;
+    transition: all 0.2s linear 0s;
+  }
+
+  &:hover {
+    text-indent: -20px;
+    background-color: #000000;
+    color: #ffffff;
+
+    &::before {
+      opacity: 1;
+      text-indent: 0px;
+    }
+  }
+}
+
+.price {
+  text-align: center;
+}
+
+.model-name {
+  text-align: center;
+}
+
+.testimonial {
+  background: #000000;
+  color: #ffffff;
+    img {
+      width: 600px;
+      height: 750px;
+      cursor: default;
+    }
+    .testimonial-quote {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      font-size: 1.5em;
+      font-family: sans-serif;
+        span {
+          display: flex;
+          justify-content: center;
+          padding-top: 2em;
+            .see-more {
+              cursor: pointer;
+              color: #000000;
+              background-color: #ffffff;
+              font: {
+                family: sans-serif;
+                size: 18px;
+              }
+              padding: 6px 0px;
+              width: 180px;
+              border-radius: 6px;
+              overflow: hidden;
+            }
+        }
+    }
+}
+
