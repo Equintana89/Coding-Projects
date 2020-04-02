@@ -23,7 +23,7 @@
     </div>
   </div>
 </div>
-<div class="padding-left-15 pointer">
+<div (click)="goHome()" class="padding-left-15 pointer">
   <div class="logo padding-top-2 margin-top-1">
     <div class="padding-left-2">
       <h6>ECO-FRIENDLY</h6>
@@ -42,7 +42,7 @@
       <div class="dropdown">
         <ul class="pointer is-normal">
           <li class="dropdown-title padding-top-2">
-            About
+            <a [routerLink]="['/about']" routerLinkActive="router-link-active" >About</a>
           </li>
           <ul class="dropdown-content">
             <li class="menu-item">About Niche</li>

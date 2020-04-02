@@ -111,6 +111,10 @@ $positions: left, right, bottom, top;
   cursor: pointer;
 }
 
+.pointer-default {
+  cursor: default;
+}
+
 ul li {
   list-style-type: none;
 }
@@ -141,6 +145,10 @@ a {
   z-index: 1;
   h6 {
     font-size: .5rem;
+  }
+  a{
+    text-align: center;
+    color: #ffff;
   }
 }
 
